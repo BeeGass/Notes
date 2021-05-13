@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Contents
+custom_css: tufte
 ---
 <span class="newthought">These notes</span> form a concise introductory course on probabilistic graphical models{% include sidenote.html id="note-pgm" note="Probabilistic graphical models are a subfield of machine learning that studies how to describe and reason about the world in terms of probabilities." %}.
 They are based on Stanford [CS228](https://cs228.stanford.edu/), and are written by [Volodymyr Kuleshov](http://www.stanford.edu/~kuleshov) and [Stefano Ermon](http://cs.stanford.edu/~ermon/), with the [help](https://github.com/ermongroup/cs228-notes/commits/master) of many students and course staff.

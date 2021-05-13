@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Learning in latent variable models
+custom_css: tufte
 ---
 
 Up to now, we have assumed that when learning a directed or an undirected model, we are given examples of every single variable that we are trying to model.

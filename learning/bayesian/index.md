@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bayesian Learning
+custom_css: tufte
 ---
 
 The learning approaches we have discussed so far are based on the principle of maximum likelihood estimation. While being extremely general, there are limitations of this approach as illustrated in the two examples below.

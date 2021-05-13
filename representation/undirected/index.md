@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Markov random fields
+custom_css: tufte
 ---
 Bayesian networks are a class of models that can compactly represent many interesting probability distributions. However, we have seen in the previous chapter that some distributions may have independence assumptions that cannot be perfectly represented by the structure of a Bayesian network.
 

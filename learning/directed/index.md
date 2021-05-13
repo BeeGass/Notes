@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Learning in directed models
+custom_css: tufte
 ---
 We now turn our attention to the third and last part of the course: *learning*. Given a dataset, we would like to fit a model that will make useful predictions on various tasks that we care about.
 

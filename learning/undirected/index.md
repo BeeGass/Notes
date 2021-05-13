@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Learning in undirected models
+custom_css: tufte
 ---
 
 Let us now look at parameter learning in undirected graphical models. Unfortunately, as in the case of inference, the higher expressivity of undirected models also makes them significantly more difficult to deal with. Fortunately, maximum likelihood learning in these models can be reduced to repeatedly performing inference, which will allow us to apply all the approximate inference techniques that we have seen earlier.

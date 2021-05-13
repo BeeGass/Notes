@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Probability Review
+custom_css: tufte
 ---
 We will go through a review of probability concepts over here, all of the review materials have been adapted from [CS229 Probability Notes](http://cs229.stanford.edu/section/cs229-prob.pdf).
 

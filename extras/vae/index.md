@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The variational auto-encoder
+custom_css: tufte
 ---
 
 $$

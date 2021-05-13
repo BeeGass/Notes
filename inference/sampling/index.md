@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Sampling methods
+custom_css: tufte
 ---
 $$\newcommand{iid}{\overset{\text{i.i.d.}}{\sim}}$$
 

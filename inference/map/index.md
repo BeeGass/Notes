@@ -1,6 +1,7 @@
 ---
 layout: post
 title: MAP inference
+custom_css: tufte
 ---
 This section will explore in more detail the problem of MAP inference in graphical models.
 Recall that MAP inference in a graphical model $$p$$ corresponds to the following optimization problem:

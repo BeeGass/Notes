@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Further Readings
+custom_css: tufte
 ---
 
   + **Topics**

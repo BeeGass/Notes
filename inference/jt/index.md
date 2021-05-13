@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Junction Tree Algorithm
+custom_css: tufte
 ---
 We have seen how the variable elimination (VE) algorithm can answer marginal queries of the form $$P(Y \mid E = e)$$ for both directed and undirected networks.
 

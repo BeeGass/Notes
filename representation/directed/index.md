@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bayesian networks
+custom_css: tufte
 ---
 We begin with the topic of *representation*: how do we choose a probability distribution to model some interesting aspect of the world? Coming up with a good model is not always easy: we have seen in the introduction that a naive model for spam classification would require us to specify a number of parameters that is exponential in the number of words in the English language!
 

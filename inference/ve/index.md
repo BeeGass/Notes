@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Variable Elimination
+custom_css: tufte
 ---
 Next, we turn our attention to the problem of *inference* in graphical models. Given a probabilistic model (such as a Bayes net or a MRF), we are interested in using it to answer useful questions, e.g., determining the probability that a given email is spam. More formally, we focus on two types of questions:
 
