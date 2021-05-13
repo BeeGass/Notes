@@ -10,20 +10,9 @@
     {% for stylesheet in page.custom_css %}
         {% if stylesheet == "styles" %}
           <link rel="stylesheet" href="/assets/css/styles.css">
-        {% elsif if stylesheet == "tufte" %}
-          <link rel="stylesheet" href="{{ '/css/tufte.css' | prepend: site.baseurl }}">
-        {% elsif if stylesheet == "fonts" %}
-          <link rel="stylesheet" href="{{ '_sass\_fonts.scss' | prepend: site.baseurl }}">
-        {% elsif if stylesheet == "settings" %}
-          <link rel="stylesheet" href="{{ '_sass\_settings.scss' | prepend: site.baseurl }}">
-        {% elsif if stylesheet == "syntax-highlighting" %}
-          <link rel="stylesheet" href="{{ '_sass\_syntax-highlighting.scss' | prepend: site.baseurl }}">
         {% else %}
           <link rel="stylesheet" href="{{ '/css/tufte.css' | prepend: site.baseurl }}">
-          <link rel="stylesheet" href="{{ '_sass\_fonts.scss' | prepend: site.baseurl }}">
-          <link rel="stylesheet" href="{{ '_sass\_settings.scss' | prepend: site.baseurl }}">
-          <link rel="stylesheet" href="{{ '_sass\_syntax-highlighting.scss' | prepend: site.baseurl }}">
-          
+        {% endif %}
     {% endfor %}
   {% endif %}
 
