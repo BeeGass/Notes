@@ -6,20 +6,15 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  {% if page.custom_css %}
-    {% for stylesheet in page.custom_css %}
-        {% if stylesheet == "styles" %}
-          <link rel="stylesheet" href="/assets/css/styles.css">
-        {% elsif if stylesheet == "tufte" %}
-          <link rel="stylesheet" href="{{ '/css/tufte.css' | prepend: site.baseurl }}">
-        {% elsif if stylesheet == "fonts" %}
-          <link rel="stylesheet" href="{{ '/_sass\_fonts.scss' | prepend: site.baseurl }}">
-        {% elsif if stylesheet == "settings" %}
-          <link rel="stylesheet" href="{{ '/_sass\_settings.scss' | prepend: site.baseurl }}">
-        {% elsif if stylesheet == "syntax-highlighting" %}
-          <link rel="stylesheet" href="{{ '/_sass\_syntax-highlighting.scss' | prepend: site.baseurl }}">
-    {% endfor %}
-  {% endif %}
+{% if page.custom_css %}
+  {% for stylesheet in page.custom_css %}
+      {% if stylesheet == "styles" %}
+        <link rel="stylesheet" href="/assets/css/styles.css">
+      {% else %}
+        <link rel="stylesheet" href="{{ '/css/tufte.css' | prepend: site.baseurl }}">
+      {% endif %}
+  {% endfor %}
+{% endif %}
 
 
   <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
