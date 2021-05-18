@@ -3,6 +3,7 @@ layout: post
 title: Deep Learning Notation
 author: Bryan
 hasmath: "true"
+custom_css: tufte
 ---
 
 # Notation:

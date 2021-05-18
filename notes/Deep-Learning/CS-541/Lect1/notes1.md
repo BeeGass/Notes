@@ -3,6 +3,7 @@ layout: post
 title: Deep Learning Notes 1
 author: Bryan
 hasmath: "true"
+custom_css: tufte
 ---
 
 # Lecture 1: Intro and general overview of linear regression

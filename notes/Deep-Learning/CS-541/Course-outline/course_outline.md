@@ -3,6 +3,7 @@ layout: post
 title: Deep Learning Course Outline 
 author: Bryan
 hasmath: "true"
+custom_css: tufte
 ---
 
 # Course Outline
