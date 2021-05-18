@@ -1,5 +1,5 @@
 ---
-layout: note
+layout: post
 title: Deep Learning Course Outline 
 author: Bryan
 hasmath: "true"
