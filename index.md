@@ -3,7 +3,7 @@ layout: post
 title: Notes/Videos
 custom_css: tufte
 ---
-<span class="newthought">These notes</span> behave as my one stop shop for all classes I have taken and wish to review. My hope is that this can become somewhat of a database of notes for me (and hopefully others) to review. {% include sidenote.html id="note-pgm" note="I will often use these sidenotes as a way to define terms, clarify ideas further or whatever else that may be applicable." %}. Please understand that I am writing these notes as im watching lecture so there may be spelling mistakes, lapses in grammar, profanity or simply incorrect material. I hope to revise these as soon as possible. 
+<span class="newthought">These notes</span> behave as my one stop shop for all classes I have taken and wish to review. My hope is that this can become somewhat of a database of notes for me (and hopefully others) to review. {% include sidenote.html id="note-pgm" note="I will often use these sidenotes as a way to define terms, clarify ideas further or whatever else that may be applicable." %} Please understand that I am writing these notes as im watching lecture so there may be spelling mistakes, lapses in grammar, profanity or simply incorrect material. I hope to revise these as soon as possible. 
 
 If you wish to learn more about the content that is learned in each class then I would recommend clicking on the links to various classes where you will be redirected to the table of contents for that applicable class. {% include marginnote.html id='mn-construction' note='The notes are still **under construction**! You will probably find several typos. If you do, please let me know, or submit a pull request with your fixes to our [GitHub repository](https://github.com/BeeGass/Notes).'%}
 You too may help make these notes better by submitting your improvements to us via [GitHub](https://github.com/BeeGass/Notes).
@@ -26,6 +26,8 @@ You too may help make these notes better by submitting your improvements to us v
 ## Machine Learning
 
 1. [Statistical Learning](): Notes Associated with the various resources I have used to learn machine learning. Notes still need to be translated over to digital
+
+2. [CS-534](): Notes Associated with WPI's CS-534 Artificial Intelligence class {% include sidenote.html id="note-pgm" note="I realize that artificial intelligence isnt a facet of machine learning. Its just where im deciding to put these notes." %}, taught by Carolina Ruiz. Notes still need to be translated over to digital
 
 
 ## Deep Learning
