@@ -1,55 +1,35 @@
 ---
 layout: post
-title: Contents
+title: Notes/Videos
 custom_css: tufte
 ---
-<span class="newthought">These notes</span> form a concise introductory course on probabilistic graphical models{% include sidenote.html id="note-pgm" note="Probabilistic graphical models are a subfield of machine learning that studies how to describe and reason about the world in terms of probabilities." %}.
-They are based on Stanford [CS228](https://cs228.stanford.edu/), and are written by [Volodymyr Kuleshov](http://www.stanford.edu/~kuleshov) and [Stefano Ermon](http://cs.stanford.edu/~ermon/), with the [help](https://github.com/ermongroup/cs228-notes/commits/master) of many students and course staff.
-{% include marginnote.html id='mn-construction' note='The notes are still **under construction**! Although we have written up most of the material, you will probably find several typos. If you do, please let us know, or submit a pull request with your fixes to our [GitHub repository](https://github.com/ermongroup/cs228-notes).'%}
-You too may help make these notes better by submitting your improvements to us via [GitHub](https://github.com/ermongroup/cs228-notes).
+<span class="newthought">These notes</span> behave as my one stop shop for all classes I have taken and wish to review. My hope is that this can become somewhat of a database of notes for me (and hopefully others) to review. {% include sidenote.html id="note-pgm" note="I will often use these sidenotes as a way to define terms, clarify ideas further or whatever else that may be applicable." %}. Please understand that I am writing these notes as im watching lecture so there may be spelling mistakes, lapses in grammar, profanity or simply incorrect material. I hope to revise these as soon as possible. 
 
-This course starts by introducing probabilistic graphical models from the very basics and concludes by explaining from first principles the [variational auto-encoder](extras/vae), an important probabilistic model that is also one of the most influential recent results in deep learning.
+If you wish to learn more about the content that is learned in each class then I would recommend clicking on the links to various classes where you will be redirected to the table of contents for that applicable class. {% include marginnote.html id='mn-construction' note='The notes are still **under construction**! You will probably find several typos. If you do, please let me know, or submit a pull request with your fixes to our [GitHub repository](https://github.com/BeeGass/Notes).'%}
+You too may help make these notes better by submitting your improvements to us via [GitHub](https://github.com/BeeGass/Notes).
 
-## Preliminaries
+## Mathematics
 
-1. [Introduction](preliminaries/introduction/): What is probabilistic graphical modeling? Overview of the course.
+1. [Probability](): Notes Associated with WPI's probability class, taught by Michael Johnson. 
 
-2. [Review of probability theory](preliminaries/probabilityreview): Probability distributions. Conditional probability. Random variables (*under construction*).
+2. [Calculus 1-4](): Notes Associated with Cape Cod Community College's calculus classes, taught by the great Minxie Zhang. Notes still need to be translated over to digital
 
-3. [Examples of real-world applications](preliminaries/applications): Image denoising. RNA structure prediction. Syntactic analysis of sentences. Optical character recognition (*under construction*).
+3. [Linear Algebra](): Notes Associated with WPI's Linear Algebra class, taught by Simone Cassani. Notes still need to be translated over to digital
 
-## Representation
+4. [Discrete Mathematics](): Notes Associated with WPI's Discrete Math class, taught by William C. Sanguinet. Notes still need to be translated over to digital
 
-1. [Bayesian networks](representation/directed/): Definitions. Representations via directed graphs. Independencies in directed models.
+5. [Differential Equations](): Notes Associated with WPI's Differential Equations class, taught by Konstantin Lurie. Notes still need to be translated over to digital
 
-2. [Markov random fields](representation/undirected/): Undirected vs directed models. Independencies in undirected models. Conditional random fields.
+6. [Real Analysis](): I have yet to take this class. 
 
-## Inference
 
-1. [Variable elimination](inference/ve/) The inference problem. Variable elimination. Complexity of inference.
+## Machine Learning
 
-2. [Belief propagation](inference/jt/): The junction tree algorithm. Exact inference in arbitrary graphs. Loopy Belief Propagation.
+1. [Statistical Learning](): Notes Associated with the various resources I have used to learn machine learning. Notes still need to be translated over to digital
 
-3. [MAP inference](inference/map/): Max-sum message passing. Graphcuts. Linear programming relaxations. Dual decomposition.
 
-4. [Sampling-based inference](inference/sampling/): Monte-Carlo sampling. Forward Sampling. Rejection Sampling. Importance sampling. Markov Chain Monte-Carlo. Applications in inference.
+## Deep Learning
 
-5. [Variational inference](inference/variational/): Variational lower bounds. Mean Field. Marginal polytope and its relaxations.
+1. [CS-541](notes\Deep-Learning\CS-541\course_outline.md): All my notes from WPI's CS-541 Deep Learning, taught by Professor Whitehill. Notes still need to be translated over to digital
 
-## Learning
-
-1. [Learning in directed models](learning/directed/): Maximum likelihood estimation. Learning theory basics. Maximum likelihood estimators for Bayesian networks.
-
-2. [Learning in undirected models](learning/undirected/): Exponential families. Maximum likelihood estimation with gradient descent. Learning in CRFs
-
-3. [Learning in latent variable models](learning/latent/): Latent variable models. Gaussian mixture models. Expectation maximization.
-
-4. [Bayesian learning](learning/bayesian/): Bayesian paradigm. Conjugate priors. Examples (*under construction*).
-
-5. [Structure learning](learning/structure/): Chow-Liu algorithm. Akaike information criterion. Bayesian information criterion. Bayesian structure learning (*under construction*).
-
-## Bringing it all together
-
-1. [The variational autoencoder](extras/vae): Deep generative models. The reparametrization trick. Learning latent visual representations.
-
-2. [List of further readings](extras/readings): Structured support vector machines. Bayesian non-parametrics.
+2. [Pattern Recognition and Machine Learning](notes\Deep-Learning\bishops\bishops_outline.md): All my notes from reading the text book [Pattern Recognition and Machine Learning](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf). Notes still need to be translated over to digital
