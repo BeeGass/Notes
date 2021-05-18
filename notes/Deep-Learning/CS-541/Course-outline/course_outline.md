@@ -49,32 +49,25 @@ custom_css: tufte
 # Homework:
 
 ## Homework 1:
-
-* [Homework 1](notes\Deep Learning Notes\Homeworks\Homework1.md)
+* [Homework 1](notes/Deep-Learning/CS-541/Homeworks/hw1/Homework1.md)
 
 ## Homework 2:
-
-* [Homework 2](notes\Deep Learning Notes\Homeworks\Homework2.md)
+* [Homework 2](notes/Deep-Learning/CS-541/Homeworks/hw2/Homework2.md)
 
 ## Homework 3:
-
-* [Homework 3](notes\Deep Learning Notes\Homeworks\Homework3.md)
+* [Homework 3](notes/Deep-Learning/CS-541/Homeworks/hw3/Homework3.md)
 
 ## Homework 4:
-
-* [Homework 4](notes\Deep Learning Notes\Homeworks\Homework4.md)
+* [Homework 4](notes/Deep-Learning/CS-541/Homeworks/hw4/Homework4.md)
 
 ## Homework 5:
-
-* [Homework 5](notes\Deep Learning Notes\Homeworks\Homework5.md)
+* [Homework 5](notes/Deep-Learning/CS-541/Homeworks/hw5/Homework5.md)
 
 ## Homework 6:
-
-* [Homework 6](notes\Deep Learning Notes\Homeworks\Homework6.md)
+* [Homework 6](notes/Deep-Learning/CS-541/Homeworks/hw6/Homework6.md)
 
 ## Homework 7:
-
-* [Homework 7](notes\Deep Learning Notes\Homeworks\Homework7.md)
+* [Homework 7](notes/Deep-Learning/CS-541/Homeworks/hw7/Homework7.md)
 
 ---
 
@@ -83,12 +76,10 @@ custom_css: tufte
 ## **Mathematical Fundamentals:**
 
 ### Notation
-
-* [Notation](notes\Deep Learning Notes\Misc\notation.md)
+* [Notation](notes/Deep-Learning/CS-541/notation/notation.md)
 
 ### Introduction
-
-* [Notes 1](notes\Deep Learning Notes\Lect\notes1.md)
+* [Notes 1](notes/Deep-Learning/CS-541/Lect1/notes1.md)
 
 ### Linear Algebra
 
