@@ -1,5 +1,5 @@
 ---
-layout: note
+layout: post
 title: Deep Learning Notation
 author: Bryan
 hasmath: "true"
