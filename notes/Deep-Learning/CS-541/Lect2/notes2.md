@@ -4,6 +4,7 @@ title: Deep Learning Notes 2
 author: Bryan
 hasmath: "true"
 custom_css: tufte
+
 ---
 
 # Lecture 2: Linear Regression
@@ -183,7 +184,6 @@ this now means that the gradient of MSE with a bias term[^2] can be computed w.r
   	
   \end{align*}
   $$
-  
 
 ## Gradient Descent:
 
@@ -227,6 +227,8 @@ stochastic gradient descent generalizes the gradient to a smaller subset of the 
 
 <insert diagram of possible overfitting scenario>
 
+### Pseudo Code For SGD
+
 ```pseudocode
 size_of_batch = number of your choosing
 num_of_epoch = number of your choosing
@@ -241,6 +243,65 @@ def stochastic_gradient_descent():
 def get_batches(x, y, size_of_batch):
 	randomly sample a mini-batch for both x and y of size: size_of_batch
 	return batch_of_x, batch_of_y
+```
+
+### Python/Pseudo Code Example Of SGD
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from tqdm import tqdm
+
+batch_size = #hyperparameter, N size
+learning_rate = #hyperparameter, N size, ex. 0.00001 
+n_samples = #number of data points
+n_features = #number of features
+n_targets = #number of target values associated with the data points feature
+n_epochs = #hyperparameter, N size
+n_runs = #number of times to run SGD given same dataset (train/val/test)
+
+for run in range(n_runs):
+    #prepare data
+    #split data into feature and targets
+    X = np.random.normal(size=(n_samples, n_features))
+    y = np.random.normal(size=(n_samples, n_targets))
+    
+    #initialize parameters with random values
+    W = np.random.normal(size=(n_features, n_targets))
+    b = np.random.normal(size=(n_targets, n_targets))
+    
+    # keep track of errors
+    errors = []
+    
+    for epoch in range(n_epochs):
+        # randomly shuffle the data in a way where the original set in not altered 
+        permutation_indices = np.random.permutation(X.shape[0])
+        permuted_X = X[permutation_indices]
+        permuted_y = y[permutation_indices]
+        
+        for batch_index in range(0, n_samples, batch_size):
+            # prepare batches
+            batch_X = permuted_X[batch_index:batch_index+batch_size]
+            batch_y = permuted_y[batch_index:batch_index+batch_size]
+            
+            # forward pass
+            y_hat = np.dot(batch_X, W) + b
+            
+            # compute error
+            error = batch_y - y_hat
+            
+            # update
+            W += batch_X.T.dot(error) * learning_rate
+            b += np.mean(batch_y - y_pred) * learning_rate
+
+            # bookkeeping
+            errors.append(np.mean(np.abs(error)))
+            
+         # plot run
+    plt.plot(errors/np.mean(errors))
+
+# save plots
+plt.savefig('plot.png')   
 ```
 
 Each batch will generalize the landscape given the data points of that batch.
@@ -262,7 +323,25 @@ $$
 
 ## Probabilistic Machine Learning:
 
-stuff
+Probabilities provide a natural way of expressing our **uncertainty** about a particular value e.g.:
+
+* The ground-truth y we are trying to estimate 
+* Our estimate $\hat{y}$ of the ground-truth
+
+### Frequentist Probabilities:
+
+Example:
+
+* Ask a large group of randomly selected people to label the face as smiling or not
+* Count the number of labels for "smile" and divide by the total number of labels
+* the ratio is the probability of "smile" for that face image
+
+### Bayesian Probabilities:
+
+Example:
+
+* Ask one person how much she/he believes the image is smiling, quantified as a number between 0 and 1.
+* The "belief" score is the probability of "smile" for that face image
 
 ## Footnotes
 

@@ -79,7 +79,7 @@ custom_css: tufte
 * [Notation](notes/Deep-Learning/CS-541/notation/notation.md)
 
 ### Introduction
-* [Notes 1](notes/Deep-Learning/CS-541/Lect1/notes1.md)
+* [Notes 1](/Notes/notes/Deep-Learning/CS-541/Lect1/notes1.md)
 
 ### Linear Algebra
 
@@ -88,6 +88,8 @@ custom_css: tufte
 ## **Shallow Architectures:**
 
 ### Linear Regression
+
+* [Notes 2](/Notes/notes/Deep-Learning/CS-541/Lect2/notes2.md)
 
 ### Logistic & Softmax Regression
 
@@ -99,7 +101,11 @@ custom_css: tufte
 
 ### Gradient Descent
 
+* [Notes 2](/Notes/notes/Deep-Learning/CS-541/Lect2/notes2.md)
+
 ### Stochastic Gradient Descent (SGD)
+
+* [Notes 2](/Notes/notes/Deep-Learning/CS-541/Lect2/notes2.md)
 
 ## **Second-Order Optimization Methods:**
 
