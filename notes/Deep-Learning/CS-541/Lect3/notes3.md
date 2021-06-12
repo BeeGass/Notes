@@ -402,7 +402,9 @@ $$
 
 
 
-Example 2
+Example 2: Markov Chain
+
+This graph shows elements of a time series
 
 ![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Probabilistic Graph (1).png)
 
@@ -448,6 +450,7 @@ A: $0.6$
 $$
 P(b \; | \; h, c, s) = P(b \; | \; h)
 $$
+
 
 
 $$
@@ -546,7 +549,9 @@ $$
 \end{align*}
 $$
 
-We can now differentiate w.r.t. b, set to 0, and solve to obtain the MLE of B:
+We can now differentiate w.r.t. b, set to 0, and solve to obtain the MLE of B
+
+:
 $$
 \begin{align*}
 	\nabla_{b} [n_{1}\text{ log } b \; + \; (n -n_{1}) \; \text{log }(1-b)] &= \frac{n_{1}}{b} - \frac{(n - n_{1})}{1 - b} \\
@@ -561,7 +566,336 @@ $$
 
 ## Linear-Gaussian Models
 
-[52:23](https://web.microsoftstream.com/video/0e4b80e8-3e2c-4756-8097-c7d05590d364)
+Let’s consider a different model that contains real-valued RVs (not just from a finite sample space).
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Linear-Gaussian Model.png)
+
+* $X$ is some feature vector (e.g., face image).
+* $Y$ is some outcome variable (e.g., age).
+* $W$ is a vector of weights that characterize how $Y$ is related to $X$. 
+* $\sigma$  expresses how uncertain we are about $Y$ after seeing $X$. 
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Linear-Gaussian Model 1.png)
+
+Suppose we model the relationship between X, W, σ, and Y such that:
+
+* $Y$ is a normal/Gaussian random variable.
+* The expected value of $Y$ is $x^{T}w$.
+*  The variance of $Y$ is constant $(\sigma^{2})$ for all possible $x$.
+
+If we collect a dataset $D = \{ (x^{(i)}, y^{(i)})\}^{n}_{i=1}$, what is the MLE for $W$ and $\sigma$?
+$$
+P(y \; | \; w, x) = \mathcal{N}(y; x^{T}w, \sigma^{2})
+$$
+
+$$
+\begin{align}
+	P(y \; | \; x, w, \sigma^{2}) &= \mathcal{N}(y; x^{T}w, \sigma^{2}) = \frac{1}{\sqrt{2\pi \sigma^{2}}} \text{ exp}(-\frac{(y - x^{T}w)^2}{2\sigma^{2}}) \\
+	P(D \; | \; w, \sigma^{2}) &= \overset{n}{\underset{i=1}{\Pi}}P(y^{(i)} \; | \; x^{(i)}, w, \sigma^{2}) \text{ Conditional independence} \\
+	\text{log }P(D \; | \; w, \sigma^{2}) &= \text{log }\overset{n}{\underset{i=1}{\Pi}}P(y^{(i)} \; | \; x^{(i)}, w, \sigma^{2}) \\
+	&= \overset{n}{\underset{i=1}{\Sigma}} \text{log }P(y^{(i)} \; | \; x^{(i)}, w, \sigma^{2}) \\
+	&\text{for remaining portion of the proof refer to homework 2}\\
+\end{align}
+$$
+
+* MLE for **w**: 
+
+$$
+w = (\overset{n}{\underset{i=1}{\Sigma}} x^{(i)}x^{(i)^{T}})^{-1}(\overset{n}{\underset{i=1}{\Sigma}} x^{(i)}y^{(i)})
+$$
+
+This is the same solution as for linear regression, but derived as the MLE of a probabilistic model (instead of the minimum MSE).
+
+* MLE for $\sigma^{2}$: 
+
+$$
+\sigma^{2} = \frac{1}{n} \; \overset{n}{\underset{i=1}{\Sigma}} ((x^{(i)^{T}} w) - y^{(i)})^{2}
+$$
+
+This is the sum of squared residuals of the predictions w.r.t. ground-truth.
+
+## $L_{2}$ Regularization
+
+### Regularization
+
+The larger the coefficients (weights) $w$ are allowed to be, the more the neural network can overfit.
+
+If we “encourage” the weights to be small, we can reduce overfitting
+
+This is a form of regularization — any practice designed to improve the machine’s ability to generalize to new data.
+
+One of the simplest and oldest regularization techniques is to penalize large weights in the cost function.
+
+* The “unregularized” $f_{MSE}$ is:
+
+$$
+f_{MSE}(w) = \frac{1}{2n} \; \overset{n}{\underset{i=1}{\Sigma}} (y^{(i)} - \hat{y}^{(i)})^{2}
+$$
+
+* The $L_{2}$-regularized $f_{MSE}$ becomes:
+  $$
+  f_{MSE}(w) = \frac{1}{2n} \; \overset{n}{\underset{i=1}{\Sigma}} (y^{(i)} - \hat{y}^{(i)})^{2} + \frac{\alpha}{2n}w^{T}w
+  $$
+
+  * the points of $L_{2}$ is to ensure the weights $w$ will not grow too large 
+  * the $\alpha$ term is a value used to determine how much you want to regularize the weights vs reduce the loss. 
+
+* To help with future comprehensions think of $L_{2}$ regularization as 
+
+$$
+\text{MSE}_{L_{2}} = MSE + L_{2}
+$$
+
+This way its clear that the regularized term $\frac{\alpha}{2n}w^{T}w$ that is being added to MSE behaves as a penalty when weight values increase 
+
+
+
+### Hyperparameter Tuning
+
+The values we optimize when training a machine learning model - e.g., **w** and b for linear regression - are the parameters of the model.
+
+There are also values related to the training process itself - e.g., learning rate $\epsilon$, batch size $\tilde{n}$ regularization strength $\alpha$ - which are the hyperparameters of training.
+
+Both the parameters and hyperparameters can have a huge impact on model performance on test data.
+
+When estimating the performance of a trained model, it is important to tune both kinds of parameters in a principled way:
+
+* Training/validation/testing sets
+* Double cross-validation
+
+#### Training/validation/testing sets:
+
+In an application domain with a large dataset (e.g., 100K examples), it is common to partition it into three subsets:
+
+* Training (typically 70-80%): optimization of parameters
+* Validation (typically 5-10%): tuning of hyperparameters
+* Testing (typically 5-10%): evaluation of the final model
+
+For comparison with other researchers’ methods, this partition should be fixed.
+
+
+
+Hyperparameter tuning works as follows:
+
+1. For each hyperparameter configuration h:
+   * Train the parameters on the training set using h.
+   * Evaluate the model on the validation set.
+   * If performance is better than what we got with the best h so far (h* ), then save h as h*
+2. Train a model with h*, and evaluate its accuracy $A$ on the testing set. (You can train either on training data, or on training + validation data).
+
+#### Cross-validation:
+
+When working with smaller datasets, cross-validation is commonly used so that we can use all data for training.
+
+* Suppose we already know the best hyperparameters h* .
+* We partition the data into k folds of equal sizes.
+* Over k iterations, we train on $(k-1)$ folds and test on the remaining fold.
+* We then compute the average accuracy over the k testing folds.
+
+```pseudocode
+# D = dataset
+# k = number of folds
+# h = =hyperparameter configuration
+
+def CrossValidation(D, k, h):
+    # Partition D into k folds F_{1}, ..., F_{k}
+    for i in range(len(k)):
+        test_var = F_{i}
+        train_var = D \ F_{i}
+        # Train the model on train_var using h
+        acc[i] = #Evaluate NN on test
+    A = Avg[acc]
+    return A
+        
+        
+```
+
+
+
+#### Training/validation/testing sets (Continued):
+
+Cross-validation does not measure the accuracy of any single machine.
+
+Instead, cross-validation gives the expected accuracy of a classifier that is trained on $\frac{(k-1)}{k}$ of the data.
+
+However, we can train another model $M$ using h* on the entire dataset, and then report $A$ as its accuracy.
+
+Since $M$ is trained on more data than any of the crossvalidation models, its expected accuracy should be $\geq$ A.
+
+
+
+#### Cross-Validation (continued):
+
+But how do we find the best hyperparameters h* for each fold?
+
+The typical approach is to use double cross-validation, i.e.:
+
+* For each of the k “outer” folds, run cross-validation in an “inner” loop to determine the best hyperparameter configuration h* for the $k^{th}$ fold.
+
+
+
+#### Double Cross-Validation:
+
+```pseudocode
+# D = dataset
+# k = number of folds
+# h = =hyperparameter configuration
+
+def DoubleCrossValidation(D, k, H):
+	# Partition D into k folds F_{1}, ..., F_{k}
+	for i in range(len(k)):
+		test_var = F_{i}
+        train_var = D \ F_{i}
+        A^{*} = # negative infinity
+        For h in H:
+        	A = CrossValidation(train_var, k, h)
+        	if A > A^{*}:
+        		A^{*} = A
+        		h* = h
+      	Train the model on train_var using h* accs[i] = Evaluate 			the model on test_var
+    A = Avg[accs]
+    return A
+        
+```
+
+
+
+#### Training/validation/testing sets (Continued Again):
+
+In contrast to (single) cross-validation, it’s not obvious how to train a model $M$ with accuracy $\geq$ $A$. 
+
+One strategy: return an ensemble model whose output is the average of the $k$ models’ predictions…but this is rarely done.
+
+
+
+#### Subject Independence:
+
+In many machine learning settings, the data are not completely independent from each other - they are linked in some way.
+
+
+
+Example:
+
+* Predict multiple grades for each student based on their Canvas clickstream features (# logins, # forum posts, etc.).
+
+We could partition the data into folds in different ways:
+
+* We could randomize across all the data.
+* However, if grades are correlated within each student, then one (or more) training folds can leak information about the testing fold.
+* Alternatively, we can stratify across students, i.e., no student appears in more than 1 fold.
+* With this partition, the cross-validation accuracy estimates the model’s performance on a subject not used for training.
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\table4.png)
+
+
+
+## Optimization Of ML Models
+
+Gradient descent is guaranteed to converge to a local minimum (eventually) if the learning rate is small enough relative to the steepness of $f$.
+
+A function $f: \mathbb{R}^{m} \rightarrow \mathbb{R}$ is Lipschitz-continuous if: 
+$$
+\exists L: \forall x, y \in \mathbb{R}^{m}: ||f(x) - f(y)||_{2} \leq L||x -y||_{2}
+$$
+$L$ is essentially an upper bound on the absolute slope of $f$.
+
+For learning rate $\epsilon \leq \frac{1}{L}$, gradient descent will converge to a local minimum linearly, i.e., the error is O($\frac{1}{k}$) in the iterations $k$.
+
+With linear regression, the cost function $f_{MSE}$ has a single local minimum w.r.t. the weights w:
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization of ML models.png)
+
+
+
+As long as our learning rate is small enough, we will find the optimal w.
+
+## Optimization: What Can Go Wrong?
+
+In general ML and DL models, optimization is usually not so simple, due to:
+
+1. Presence of multiple local minima
+
+   ![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong.png)
+
+   
+
+2. Bad initialization of the weights w.
+
+   ![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong2.png)
+
+   
+
+3. Learning rate is too small.
+
+   ![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong3.png)
+
+   ![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong3.png)
+
+   ![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong3.png)
+
+   
+
+4. Learning rate is too small
+
+   ![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong4.png)
+
+   ![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong5.png)
+
+   ![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong6.png)
+
+
+
+With multidimensional weight vectors, badly chosen learning rates can cause more subtle problems.
+
+Consider the cost f whose level sets are shown below:
+
+Gradient descent guides the search along the direction of steepest decrease in f.
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong7.png)
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong8.png)
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong9.png)
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong10.png)
+
+With multidimensional weight vectors, badly chosen learning rates can cause more subtle problems.
+
+But what if the level sets are ellipsoids instead of spheres?
+
+* If we are lucky, we still converge quickly.
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong11.png)
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong12.png)
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong13.png)
+
+
+
+* If we are unlucky, convergence is very slow.
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong14.png)
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong15.png)
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong16.png)
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong17.png)
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong18.png)
+
+
+
+## Convexity
+
+### Convex ML Models:
+
+
+
+
+
+
 
 ## Footnotes
 
