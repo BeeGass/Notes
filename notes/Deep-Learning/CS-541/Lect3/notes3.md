@@ -1,3 +1,11 @@
+---
+layout: post
+title: Deep Learning Notes 2
+author: Bryan
+hasmath: "true"
+custom_css: tufte
+---
+
 # Lecture 3: 
 
 [TOC]
