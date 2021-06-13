@@ -49,25 +49,25 @@ custom_css: tufte
 # Homework:
 
 ## Homework 1:
-* [Homework 1]({% post_url /notes/Deep-Learning/CS-541/Homeworks/hw1/Homework1.md %})
+* [Homework 1]({% link notes/Deep-Learning/CS-541/Homeworks/hw1/Homework1.md %})
 
 ## Homework 2:
-* [Homework 2]({% post_url /notes/Deep-Learning/CS-541/Homeworks/hw2/Homework2.md %})
+* [Homework 2]({% link notes/Deep-Learning/CS-541/Homeworks/hw2/Homework2.md %})
 
 ## Homework 3:
-* [Homework 3]({% post_url /notes/Deep-Learning/CS-541/Homeworks/hw3/Homework3.md %})
+* [Homework 3]({% link notes/Deep-Learning/CS-541/Homeworks/hw3/Homework3.md %})
 
 ## Homework 4:
-* [Homework 4]({% post_url /notes/Deep-Learning/CS-541/Homeworks/hw4/Homework4.md %})
+* [Homework 4]({% link notes/Deep-Learning/CS-541/Homeworks/hw4/Homework4.md %})
 
 ## Homework 5:
-* [Homework 5]({% post_url /notes/Deep-Learning/CS-541/Homeworks/hw5/Homework5.md %})
+* [Homework 5]({% link notes/Deep-Learning/CS-541/Homeworks/hw5/Homework5.md %})
 
 ## Homework 6:
-* [Homework 6]({% post_url /notes/Deep-Learning/CS-541/Homeworks/hw6/Homework6.md %})
+* [Homework 6]({% link notes/Deep-Learning/CS-541/Homeworks/hw6/Homework6.md %})
 
 ## Homework 7:
-* [Homework 7]({% post_url /notes/Deep-Learning/CS-541/Homeworks/hw7/Homework7.md %})
+* [Homework 7]({% link notes/Deep-Learning/CS-541/Homeworks/hw7/Homework7.md %})
 
 ---
 
