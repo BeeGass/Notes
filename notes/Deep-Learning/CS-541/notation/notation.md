@@ -18,6 +18,7 @@ custom_css: tufte
 - Vectors are column vectors unless noted otherwise.
 - n refers to number of examples; i is the index variable
 - m refers to number of features; j is the index variable.
+- $\mathbb{E}$ refers to the expectation. "expected value"
 
 ## Multiplication
 
@@ -49,7 +50,6 @@ $$
   $$
   \nabla_xf = Jac[f]^{T}
   $$
-  
 
 The **Hessian** of a function $f: \Reals^{m} \to \Reals$ w.r.t. input **x** is the matrix of second partial derivatives:
 $$
@@ -65,4 +65,3 @@ $$
   $$
   H[f] = Jac[\nabla_xf]
   $$
-  

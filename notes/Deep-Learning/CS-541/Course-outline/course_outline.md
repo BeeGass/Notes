@@ -76,10 +76,10 @@ custom_css: tufte
 ## **Mathematical Fundamentals:**
 
 ### Notation
-* [Notation](/notes/Deep-Learning/CS-541/notation/notation.md)
+* [Notation](/notes/Deep-Learning/CS-541/notation/notation)
 
 ### Introduction
-* [Notes 1](/notes/Deep-Learning/CS-541/Lect1/notes1.md)
+* [Notes 1](/notes/Deep-Learning/CS-541/Lect1/notes1)
 
 ### Linear Algebra
 
