@@ -31,6 +31,6 @@ If you wish to learn more about the content that is learned in each class then I
 
 ## Deep Learning
 
-1. [CS-541](notes/Deep-Learning/CS-541/Course-outline/course_outline.md): All my notes from WPI's CS-541 Deep Learning, taught by Professor Whitehill. Notes still need to be translated over to digital
+1. [CS-541](notes/Deep-Learning/CS-541/): All my notes from WPI's CS-541 Deep Learning, taught by Professor Whitehill. Notes still need to be translated over to digital
 
 2. [Pattern Recognition and Machine Learning](notes/Deep-Learning/bishops/Outline/bishops_outline.md): All my notes from reading the text book Pattern Recognition and Machine Learning. Notes still need to be translated over to digital
