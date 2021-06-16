@@ -178,7 +178,7 @@ $$
 $$
 The Hessian matrix is therefore:
 
- 
+
 $$
 H[f] = 
 \begin{bmatrix}
@@ -399,9 +399,69 @@ $$
 	(TX)(TX)^{T} &= I 
 \end{align*}
 $$
-This will transform the elipsesoidal landscape into a circular landscape 
+We have thus derived a transform $T = \Lambda^{-\frac{1}{2}^{T}} \Phi^{T}$ such that the (uncentered) auto-covariance of the transformed data $\tilde{X} = TX$ is the identity matrix $\textbf{I}$.
 
+$\textbf{T}$ transforms the cost from $f_{MSE}(w;X)$ to $f_{MSE}(w;\tilde{X})$
 
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Whitening Transformations.png)
+
+This will transform the ellipsoidal landscape into a circular landscape 
+
+Whitening transformations are a technique from “classical” ML rather than DL.
+
+* Time cost is O(m3), which for high-dimensional feature spaces is too large.
+
+However, whitening has inspired modern DL techniques such as batch normalization (Szegedy & Ioffe, 2015) (more to come later) and concept whitening (Chen et al. 2020).
+
+## Second-order Methods For Optimization:
+
+An alternative to changing the input features is to use an optimization procedure that considers the 2nd- (or even higher) order terms of the loss function
+
+From the classical optimization literature, one of the most common method is Newton-Raphson (aka Newton’s method).
+
+### Newton’s Method:
+
+When applicable, it offers faster convergence guarantees (quadratic rather than linear convergence).
+
+Newton’s method is an iterative method for finding the roots of a real-valued function f, i.e., w such that $f(w) = 0$.
+
+* This is useful because we can use it to maximize/minimize a function by finding the roots of the gradient.
+
+Let the 2nd-order Taylor expansion of $f$ around $w^{(k)}$ be:
+$$
+\begin{align*}
+	f(w) &\approx f(w^{(k)}) + \nabla_{w}f(w^{(k)})(w - w^{(k)}) + \frac{1}{2}(w - w^{(k)})^{T} \textbf{H}(w - w^{(k)}) \\
+	\nabla_{w} f(w) &\approx \nabla_{w} f(w^{(k)}) + \frac{1}{2} \nabla_{w} (w^{T}Hw - w^{T}Hw^{(k)} - w^{(k)}Hw + w^{(k)^{T}}Hw^{(k)}) \\
+	&= \nabla_{w} f(w^{(k)}) + Hw - \frac{1}{2}Hw^{(k)} - \frac{1}{2}Hw^{(k)} \\
+	&= \nabla_{w} f(w^{(k)}) + Hw - Hw^{(k)} \\ \\ \\
+	0 &= \nabla_{w} f(w^{(k)}) + Hw - Hw^{(k)} \\ 
+    Hw &= Hw{(k)} - \nabla_{w}f(w^{(k)}) \\
+    w^{(k+1)} &= w^{(k)} - H^{-1}\nabla_{w}f(w^{(k)})
+\end{align*}
+$$
+where $\textbf{H}$ is the Hessian of f evaluated at $\textbf{w}^{(k)}$
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Newton's Method.png)
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Newton's Method2.png)
+
+Note that, compared to gradient descent, the update rule in Newton’s method replaces the step size $\epsilon$ with the Hessian evaluated at $w^{(k)}$: 
+
+ Gradient descent:
+
+$w^{(k+1)} = w^{(k)} - \epsilon \nabla_{w}f(w^{(k)})$
+
+Newton's method: 
+
+$w^{(k+1)} = w^{(k)} - H^{-1} \nabla_{w}f(w^{(k)})$ 
+
+Newton’s method requires computation of $H$.
+
+* For high-dimensional feature spaces, $H$ is huge, i.e., $O(m^{3})$.
+
+Hence, Newton’s method in its pure form is impractical for DL.
+
+However, it has inspired modern DL optimization methods such as the Adam optimizer (Kingma & Ba 2014)(more to come later).
 
 
 
