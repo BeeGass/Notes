@@ -283,10 +283,10 @@ $$
 $$
 For any vector $v$, we have:
 $$
-\begin{align} 
+\begin{align*} 
 	v^{T}XX^{T}v &= (X^{T}v)^T(X^{T}v) \\
 	&\geq 0
-\end{align}
+\end{align*}
 $$
 
 ### Convex ML Models:
