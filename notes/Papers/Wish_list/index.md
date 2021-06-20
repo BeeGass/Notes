@@ -12,7 +12,7 @@ custom_css: tufte
 
 ## **Softmax**:
 
-### Tutorial
+### Tutorial/Explanation
 
 - [Derivation of Softmax Function](https://mmuratarat.github.io/2019-01-27/derivation-of-softmax-function)
 
