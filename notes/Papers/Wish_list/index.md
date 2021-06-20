@@ -16,6 +16,10 @@ custom_css: tufte
 
 - [Derivation of Softmax Function](https://mmuratarat.github.io/2019-01-27/derivation-of-softmax-function)
 
+### Paper
+
+Not really needed to understand
+
 
 ## **LSTM**:
 
@@ -24,6 +28,10 @@ custom_css: tufte
 - [Understanding LSTM Networks](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 - [Understanding LSTM – a tutorial into Long Short-Term Memory Recurrent Neural Networks](https://arxiv.org/pdf/1909.09586.pdf)
 - [Anyone Can Learn To Code an LSTM-RNN in Python (Part 1: RNN)](https://iamtrask.github.io/2015/11/15/anyone-can-code-lstm/)
+
+### Paper
+
+Not really needed to understand
 
 
 ## **Auto-Encoders**:
