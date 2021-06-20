@@ -9,28 +9,31 @@ If you wish to learn more about the content that is learned in each class then I
 
 ## Mathematics
 
-1. [Probability](): Notes Associated with WPI's probability class, taught by Michael Johnson. 
+1. [Probability](): Notes associated with WPI's probability class, taught by Michael Johnson.
+    * [AFCIP](): Notes associated with my readings and questions answered from the textbook [A First Course in Probability](http://julio.staff.ipb.ac.id/files/2015/02/Ross_8th_ed_English.pdf).
 
-2. [Calculus 1-4](): Notes Associated with Cape Cod Community College's calculus classes, taught by the great Minxie Zhang. Notes still need to be translated over to digital
+2. [Calculus 1-4](): Notes associated with Cape Cod Community College's calculus classes, taught by the great Minxie Zhang. Notes still need to be translated over to digital.
 
-3. [Linear Algebra](): Notes Associated with WPI's Linear Algebra class, taught by Simone Cassani. Notes still need to be translated over to digital
+3. [Linear Algebra](): Notes associated with WPI's Linear Algebra class, taught by Simone Cassani. Notes still need to be translated over to digital.
 
-4. [Discrete Mathematics](): Notes Associated with WPI's Discrete Math class, taught by William C. Sanguinet. Notes still need to be translated over to digital
+4. [Discrete Mathematics](): Notes associated with WPI's Discrete Math class, taught by William C. Sanguinet. Notes still need to be translated over to digital.
 
-5. [Differential Equations](): Notes Associated with WPI's Differential Equations class, taught by Konstantin Lurie. Notes still need to be translated over to digital
+5. [Differential Equations](): Notes associated with WPI's Differential Equations class, taught by Konstantin Lurie. Notes still need to be translated over to digital.
 
-6. [Real Analysis](): I have yet to take this class. 
+6. [Real Analysis](): I have yet to take this class.
 
 
 ## Machine Learning
 
-1. [Statistical Learning](): Notes Associated with the various resources I have used to learn machine learning. Notes still need to be translated over to digital
+1. [Statistical Learning](): Notes associated with the various resources I have used to learn machine learning. Notes still need to be translated over to digital.
 
-2. [CS-534](): Notes Associated with WPI's CS-534 Artificial Intelligence class {% include sidenote.html id="note-pgm" note="I realize that artificial intelligence isnt a facet of machine learning. Its just where im deciding to put these notes." %}, taught by Carolina Ruiz. Notes still need to be translated over to digital
+2. [CS-534](): Notes associated with WPI's CS-534 Artificial Intelligence class {% include sidenote.html id="note-pgm" note="I realize that artificial intelligence isnt a facet of machine learning. Its just where im deciding to put these notes." %}, taught by Carolina Ruiz. Notes still need to be translated over to digital.
 
 
 ## Deep Learning
 
-1. [CS-541](notes/Deep-Learning/CS-541/): All my notes from WPI's CS-541 Deep Learning, taught by Professor Whitehill. Notes still need to be translated over to digital
+1. [CS-541](notes/Deep-Learning/CS-541/): All my notes from WPI's CS-541 Deep Learning, taught by Professor Whitehill. Notes still need to be translated over to digital.
 
-2. [Pattern Recognition and Machine Learning](notes/Deep-Learning/bishops/Outline/bishops_outline.md): All my notes from reading the text book Pattern Recognition and Machine Learning. Notes still need to be translated over to digital
+2. [Pattern Recognition and Machine Learning](notes/Deep-Learning/bishops/Outline/bishops_outline.md): All my notes from reading the text book Pattern Recognition and Machine Learning. Notes still need to be translated over to digital.
+
+3. [CS231n](): All my notes from Stanford's [CS231n: Convolutional Neural Networks for Visual Recognition's](http://cs231n.stanford.edu/) class. Notes still need to be translated over to digital.

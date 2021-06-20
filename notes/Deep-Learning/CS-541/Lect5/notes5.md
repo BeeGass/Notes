@@ -14,3 +14,6 @@ So far, we have talked only about the first case.
 The simplest classification problem consists of just 2 classes (binary classification), i.e., $y \; \epsilon \{ 0, 1\}$. 
 
 One of the simplest and most common classification techniques is logistic regression.
+
+
+
