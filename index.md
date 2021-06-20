@@ -38,4 +38,4 @@ If you wish to learn more about the content that is learned in each class then I
 
 3. [CS231n](): All my notes from Stanford's [CS231n: Convolutional Neural Networks for Visual Recognition's](http://cs231n.stanford.edu/) class. Notes still need to be translated over to digital.
 
-4. [Paper Wish List](): Here is my wish list of papers I hope to read in the future.
+4. [Paper Wish List](notes\Papers\Wish_list): Here is my wish list of papers I hope to read in the future.
