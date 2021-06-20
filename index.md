@@ -34,6 +34,6 @@ If you wish to learn more about the content that is learned in each class then I
 
 1. [CS-541](notes/Deep-Learning/CS-541/): All my notes from WPI's CS-541 Deep Learning, taught by Professor Whitehill. Notes still need to be translated over to digital.
 
-2. [Pattern Recognition and Machine Learning](notes/Deep-Learning/bishops/Outline/bishops_outline.md): All my notes from reading the text book Pattern Recognition and Machine Learning. Notes still need to be translated over to digital.
+2. [PRML](notes/Deep-Learning/bishops/Outline/bishops_outline.md): All my notes from reading the textbook [Pattern Recognition and Machine Learning](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf). Notes still need to be translated over to digital.
 
 3. [CS231n](): All my notes from Stanford's [CS231n: Convolutional Neural Networks for Visual Recognition's](http://cs231n.stanford.edu/) class. Notes still need to be translated over to digital.
