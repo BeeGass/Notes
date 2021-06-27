@@ -53,6 +53,7 @@ Not really needed to understand
 ### Tutorial/Explanation
 
 - [Yannic: Generative Adversarial Networks](https://www.youtube.com/watch?v=eyxmSmjmNS0&list=PL1v8zpldgH3qQB5Pz6ZSTTDLu0BjAJYNf&index=3)
+- [Dr. Scott Hawley's Crash Course On GANs](https://drscotthawley.github.io/blog/2017/05/05/Crash-Course-On-GANs.html)
 - [DC-GAN](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html): This comes after GANs
 
 ### Paper

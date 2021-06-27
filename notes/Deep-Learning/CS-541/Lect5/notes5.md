@@ -226,9 +226,193 @@ Suppose we have a dataset of 3 examples, where the ground-truth class labels are
 
 Then we would define our ground-truth vectors as:
 $$
-dsdsd
+\begin{align*}
+	y^{(1)} &= \begin{bmatrix}
+					1 \\
+					0 \\
+				\end{bmatrix} 
+				\begin{matrix}
+					\leftarrow \text{This "slot" is for class 0} \\
+					\leftarrow \text{This "slot" is for class 1} \\
+				\end{matrix} \\ \\
+				
+	y^{(2)} &= \begin{bmatrix}
+					0 \\
+					1 \\
+				\end{bmatrix} 
+				\begin{matrix}
+					\leftarrow \text{This "slot" is for class 0} \\
+					\leftarrow \text{This "slot" is for class 1} \\
+				\end{matrix} \\ \\
+				
+	y^{(3)} &= \begin{bmatrix}
+					1 \\
+					0 \\
+				\end{bmatrix} 
+				\begin{matrix}
+					\leftarrow \text{This "slot" is for class 0} \\
+					\leftarrow \text{This "slot" is for class 1} \\
+				\end{matrix} \\ 
+				&\text{- Exactly 1 coordinate of each y is 1; the others are 0} \\ \\ \\
+				
+	\hat{y}^{(1)} &= \begin{bmatrix}
+					0.93 \\
+					0.07 \\
+				\end{bmatrix} 
+				\begin{matrix}
+					\leftarrow \text{Machine’s “belief” that the label is 0.} \\
+					\leftarrow \text{Machine’s “belief” that the label is 1.} \\
+				\end{matrix} \\ \\
+				
+	\hat{y}^{(2)} &= \begin{bmatrix}
+					0.4 \\
+					0.6 \\
+				\end{bmatrix} 
+				\begin{matrix}
+					\leftarrow \text{Machine’s “belief” that the label is 0.} \\
+					\leftarrow \text{Machine’s “belief” that the label is 1.} \\
+				\end{matrix} \\ \\
+				
+	\hat{y}^{(3)} &= \begin{bmatrix}
+					0.99 \\
+					0.01 \\
+				\end{bmatrix} 
+				\begin{matrix}
+					\leftarrow \text{Machine’s “belief” that the label is 0.} \\
+					\leftarrow \text{Machine’s “belief” that the label is 1.} \\
+				\end{matrix} \\
+	&\text{- Each coordinate of ŷ is a probability} \\
+	&\text{- The sum of the coordinates in each ŷ is 1}
+\end{align*}
 $$
-Exactly 1 coordinate of each $y$ is 1; the others are 0.
+
+
+## Softmax Activation Function:
+
+Logistic regression outputs a scalar label $\hat{y}$ representing the probability that the label is 1
+
+* We needed just a single weight vector w, so that $\hat{y} = \sigma(x^{T}w)$.
+
+Softmax regression outputs a $c$-vector representing the probabilities that the label is $k=1, ..., c$.
+
+* We need $c$ different vectors of weights $w^{(1)}, ..., w^{(c)}$.
+* Weight vector $w^{(k)}$ computes how much input $x$ “agrees” with class $k$.
+
+
+
+With softmax regression, we first compute:
+$$
+\begin{align*}
+	z_{1} &= x^{T}w^{(1)} \\
+	z_{2} &= x^{T}w^{(2)} \\
+	      &\text{...} \\
+	z_{c} &= x^{T}w^{(c)} \\ \\
+	&\text{I will refer to the z’s as “pre-activation scores”.}
+\end{align*}
+$$
+We then normalize across all $c$ classes so that:
+
+1. Each output $\hat{y}_{k}$ is non-negative.
+2. The sum of $\hat{y}_{k}$ over all $c$ classes is 1.
+
+## Normalization of the $\hat{y}_{k}$
+
+1. To enforce non-negativity, we can exponentiate each $z_{k}$:
+   $$
+   \hat{y}_{k} = exp(z_{k})
+   $$
+
+2. To enforce that the $\hat{y}_{k}$ sum to 1, we can divide each entry by the sum:
+   $$
+   \hat{y}_{k} = \frac{exp(z_{k})}{\underset{k^{'}=1}{\overset{c}{\sum}}exp(z_{k^{'}})}
+   $$
+   ![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\softmax regression diagram.png)
+
+With softmax regression, we first compute:
+$$
+z_{1} = x^{T}w^{(1)}
+$$
+and subsequently every other node:
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\softmax regression diagram2.png)
+$$
+\begin{align*}
+	z_{1} &= x^{T}w^{(1)} \\
+	z_{2} &= x^{T}w^{(2)} \\
+	      &\text{...} \\
+	z_{c} &= x^{T}w^{(c)} \\ \\
+	
+\end{align*}
+$$
+we then normalize across all $c$ classes. 
+
+![](C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\softmax regression diagram3.png)
+$$
+\hat{y}_{k} = P(y = k \; | \; x, w^{(1)}, ..., w^{(c)}) = \frac{exp(z_{k})}{\underset{k^{'}=1}{\overset{c}{\sum}}exp(z_{k^{'}})}
+$$
+This is how softmax works but how do we train it? 
+
+We need a loss function that can support more than just 2 classes. 
+
+Log-loss works well for logistic regression but is inherently limited to 2 classes. 
+
+We are going to generalize to log-loss function into cross-entropy loss.
+
+## Cross-entropy Loss
+
+We need a loss function that can support $c \geq 2$ classes.
+
+We will use the cross-entropy (CE) loss:
+$$
+f_{CE} = - \underset{i=1}{\overset{n}{\sum}} \underset{k=1}{\overset{c}{\sum}} y^{(i)}_{k} \; \text{log} \; \hat{y}^{(i)}_{k}
+$$
+Note that the $f_{log}$ (for logistic regression) is a special case of $f_{CE}$ (for softmax regression) for $c=2$
+
+To see how, consider just a simple example:
+$$
+\begin{align*}
+	f_{CE} &= - \underset{k=0}{\overset{1}{\sum}} y^{(i)}_{k} \; \text{log} \; \hat{y}^{(i)}_{k} \\ \\
+	&= - y_{1} \text{log } \hat{y}_{1} - y_{0} \text{log } \hat{y}_{0} \\
+	&= - y_{1} \text{log } \hat{y}_{1} - \underset{\uparrow}{(1 - y_{1})} \text{log } \underset{\uparrow}{(1 - \hat{y_{1}})} \\
+	& \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \text{Recall that the sum over all coordinates} \\
+	& \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \text{of each $\hat{y}$ (and each $y$) must equal 1.} \\
+	& \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \text{Since there are only 2 classes, then} \\
+	& \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \text{$\hat{y}_{0} = 1 - \hat{y}_{1}$ (and $y_{0} = 1 - y_{1}$).} \\ \\ 
+	&\hat{y}^{(1)} = \begin{bmatrix}
+						0.93 \\
+						0.07 \\
+					\end{bmatrix}
+\end{align*}
+$$
+
+
+[12:52](https://www.youtube.com/watch?v=FVaqs3zmrv0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
