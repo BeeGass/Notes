@@ -76,14 +76,18 @@ custom_css: tufte
 ## **Mathematical Fundamentals:**
 
 ### Notation
+
 * [Notation](notation/notation.md)
 
 ### Introduction
+
 * [Notes 1](Lect1/notes1.md)
 
 ### Linear Algebra
 
 ### Probability Theory
+
+* [Notes 3](Lect3/notes3.md)
 
 ## **Shallow Architectures:**
 
@@ -92,6 +96,8 @@ custom_css: tufte
 * [Notes 2](Lect2/notes2.md)
 
 ### Logistic & Softmax Regression
+
+* [Notes 5](Lect5/notes5.md)
 
 ## **Latent Variable Models:**
 
@@ -106,6 +112,7 @@ custom_css: tufte
 ### Stochastic Gradient Descent (SGD)
 
 * [Notes 2](Lect2/notes2.md)
+* [Notes 3](Lect3/notes3.md)
 
 ## **Second-Order Optimization Methods:**
 
@@ -114,6 +121,8 @@ custom_css: tufte
 ## **Data pre-processing:**
 
 ### Whitening transformations
+
+* [Notes 4](Lect4/notes4.md)
 
 ---
 
