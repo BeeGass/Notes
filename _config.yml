@@ -1,10 +1,14 @@
 baseurl: /Notes
-title: Probabilistic graphical modeling course
-subtitle: Lecture notes for Stanford cs228.
-author: Volodymyr Kuleshov
+title: Bryan's Notes
+subtitle: Notes
+author: Bryan Gass
 simple_search: http://google.com/search
-description: Lecture notes for Stanford cs228.
-name: cs228-notes
+description: A place where I store helpful resources and my notes from various classes I have taken
+name: Bryan Gass's Notes
+
+repository: BeeGass/Notes
+github_username: BeeGass
+
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 permalink: /articles/:short_year/:title
 timezone: America/New_York
