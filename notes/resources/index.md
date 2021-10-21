@@ -234,6 +234,7 @@ hasmath: "false"
 ### Generic Resources:
 
 * [A Self-Learning, Modern Computer Science Curriculum](https://functionalcs.github.io/curriculum/)
+* [Teach Yourself Computer Science](https://teachyourselfcs.com/)
 
 ### Algorithms:
 
@@ -244,6 +245,7 @@ hasmath: "false"
 * [CS229: Machine Learning](http://cs229.stanford.edu/)
 * [CS 329S: Machine Learning Systems Design](https://stanford-cs329s.github.io/) 
 * [EECS 564: Estimation, Filtering, and Detection.](https://web.eecs.umich.edu/~cscott/past_courses/eecs564w11/index.html)
+* [Columbia's well respected machine learning course](https://www.edx.org/course/machine-learning)
 
 ### Deep Learning:
 
@@ -311,16 +313,19 @@ hasmath: "false"
 
 * [Mathematics for Machine Learning](https://mml-book.github.io/)
   * [mml-book](https://mml-book.github.io/book/mml-book.pdf)
-* [Natural Language Processing with Python](https://www.nltk.org/book/)
 * [Pattern Recognition And Machine Learning](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf)
   * [Pattern Recognition And Machine Learning: Solutions To Exercises](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/05/prml-web-sol-2009-09-08.pdf)
   * [Solutions to “Pattern Recognition and Machine Learning”](https://tommyodland.com/files/edu/bishop_solutions.pdf)
+* [Model-Based Machine Learning](https://www.mbmlbook.com/toc.html)
 * [Dive Into Deep Learning Textbook](https://d2l.ai/)
 * ["Probabilistic Machine Learning" - a book series by Kevin Murphy](https://probml.github.io/pml-book/)
 * [Gaussian Processes for Machine Learning](http://www.gaussianprocess.org/gpml/chapters/RW.pdf)
 * [The Deep Learning Book](https://www.deeplearningbook.org/)
+* [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
 * [Learning Machine Learning Book](https://rentruewang.github.io/learning-machine/intro.html)
 * [Neural Network From Scratch](https://nnfs.io/)
+* [Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book.html)
+* [Natural Language Processing with Python](https://www.nltk.org/book/)
 
 **Books I used In My Optimization For Deep Learning Course**
 
@@ -354,6 +359,11 @@ hasmath: "false"
 
 ## Online Classes (Mathematics)
 
+### Calculus
+* [Single Variable Calculus](https://ocw.mit.edu/courses/mathematics/18-01-single-variable-calculus-fall-2006/)
+* [Multivariable Calculus](https://ocw.mit.edu/courses/mathematics/18-02-multivariable-calculus-fall-2007/)
+* [Mathematics for Machine Learning: Multivariate Calculus:](https://www.youtube.com/playlist?list=PLiiljHvN6z193BBzS0Ln8NnqQmzimTW23)
+
 ### Real Analysis:
 
 * [Really Great Real Analysis Youtube Lecture Series](https://www.youtube.com/playlist?list=PL04BA7A9EB907EDAF)
@@ -367,38 +377,32 @@ hasmath: "false"
 
 ### Linear Algebra:
 
-* [Linear Algebra Taught By The Great Prof. Gilbert Strang](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)
+* [Linear Algebra](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)
+  * [Linear Algebra Taught By The Great Prof. Gilbert Strang](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)
+* [Mathematics for Machine Learning: Linear Algebra:](https://www.youtube.com/playlist?list=PLiiljHvN6z1_o1ztXTKWPrShrMrBLo5P3)
 
 
-
+## Non-Online Class Resources
 ## Calculus
-
-Need to be filled in 
-
+* [Stewart - Calculus](https://www.stewartcalculus.com/)
+* [3Blue1Brown's Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
 
 
 ## Linear Algebra 
-
+* [Strang - Introduction to Linear Algebra](https://math.mit.edu/~gs/linearalgebra/)
 * [3Blue1Brown: Essence Of Linear Algebra](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 * [Linear Algebra Review and Reference](http://cs229.stanford.edu/section/cs229-linalg.pdf)
 
 
-
 ## Probability
-
+* [Introduction to Probability and Statistics](https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/)
 * [Review of Probability Theory: Notes](http://cs229.stanford.edu/section/cs229-prob.pdf)
 
   
-
-
-
 ## Statistics
-
-Need to be filled in 
-
+* [Introduction to Probability and Statistics](https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/)
 
 
 ## Real Analysis
-
 * [Fantastic Collection Of Real Analysis Resources](https://longformmath.com/videos)
 
