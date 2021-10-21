@@ -1,0 +1,56 @@
+I"�<p><span class="newthought">These notes</span> behave as my one stop shop for all classes I have taken and wish to review. My hope is that this can become somewhat of a database of notes for me (and hopefully others) to review. <label for="note-pgm" class="margin-toggle sidenote-number"></label><input type="checkbox" id="note-pgm" class="margin-toggle" /><span class="sidenote">I will often use these sidenotes as a way to define terms, clarify ideas further or whatever else that may be applicable.</span> Please understand that I am writing these notes as im watching lecture so there may be spelling mistakes, lapses in grammar, profanity or simply incorrect material. I hope to revise these as soon as possible.</p>
+
+<p>If you wish to learn more about the content that is learned in each class then I would recommend clicking on the links to various classes where you will be redirected to the table of contents for that applicable class. <label for="mn-construction" class="margin-toggle">⊕</label><input type="checkbox" id="mn-construction" class="margin-toggle" /><span class="marginnote">The notes are still <strong>under construction</strong>! You will probably find several typos. If you do, please let me know, or submit a pull request with your fixes to the <a href="https://github.com/BeeGass/Notes">GitHub repository</a>.</span></p>
+
+<h2 id="notes">Notes</h2>
+
+<h3 id="mathematics">Mathematics</h3>
+
+<ol>
+  <li><a href="">Probability</a>: Notes associated with WPI’s probability class, taught by Michael Johnson.
+    <ul>
+      <li><a href="">AFCIP</a>: Notes associated with my readings and questions answered from the textbook <a href="http://julio.staff.ipb.ac.id/files/2015/02/Ross_8th_ed_English.pdf">A First Course in Probability</a>.</li>
+    </ul>
+  </li>
+  <li>
+    <p><a href="">Calculus 1-4</a>: Notes associated with Cape Cod Community College’s calculus classes, taught by the great Minxie Zhang. Notes still need to be translated over to digital.</p>
+  </li>
+  <li>
+    <p><a href="">Linear Algebra</a>: Notes associated with WPI’s Linear Algebra class, taught by Simone Cassani. Notes still need to be translated over to digital.</p>
+  </li>
+  <li>
+    <p><a href="">Discrete Mathematics</a>: Notes associated with WPI’s Discrete Math class, taught by William C. Sanguinet. Notes still need to be translated over to digital.</p>
+  </li>
+  <li>
+    <p><a href="">Differential Equations</a>: Notes associated with WPI’s Differential Equations class, taught by Konstantin Lurie. Notes still need to be translated over to digital.</p>
+  </li>
+  <li><a href="">Real Analysis</a>: I have yet to take this class.</li>
+</ol>
+
+<h3 id="machine-learning">Machine Learning</h3>
+
+<ol>
+  <li>
+    <p><a href="">Statistical Learning</a>: Notes associated with the various resources I have used to learn machine learning. Notes still need to be translated over to digital.</p>
+  </li>
+  <li>
+    <p><a href="">CS-534</a>: Notes associated with WPI’s CS-534 Artificial Intelligence class <label for="note-pgm" class="margin-toggle sidenote-number"></label><input type="checkbox" id="note-pgm" class="margin-toggle" /><span class="sidenote">I realize that artificial intelligence isnt a facet of machine learning. Its just where im deciding to put these notes.</span>, taught by Carolina Ruiz. Notes still need to be translated over to digital.</p>
+  </li>
+</ol>
+
+<h3 id="deep-learning">Deep Learning</h3>
+
+<ol>
+  <li><a href="notes/Deep-Learning/CS-541/">CS-541</a>: All my notes from WPI’s CS-541 Deep Learning, taught by Professor Whitehill. Notes still need to be translated over to digital.</li>
+  <li><a href="notes/Deep-Learning/bishops/Outline/bishops_outline.md">PRML</a>: All my notes from reading the textbook <a href="http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf">Pattern Recognition and Machine Learning</a>. Notes still need to be translated over to digital.</li>
+  <li><a href="">CS231n</a>: All my notes from Stanford’s <a href="http://cs231n.stanford.edu/">CS231n: Convolutional Neural Networks for Visual Recognition’s</a> class. Notes still need to be translated over to digital.</li>
+</ol>
+
+<h2 id="resources">Resources</h2>
+
+<ol>
+  <li><a href="notes/resources/">Resources For Everything</a>: This is quite literally every resource I have used to date that I think is worth using, given the topic.</li>
+  <li><a href="notes\Papers\Wish_list">Paper Wish List</a>: Here is my wish list of papers I hope to read in the future.</li>
+</ol>
+
+:ET

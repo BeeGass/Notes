@@ -1,0 +1,14 @@
+I" <h1 id="convolutional-neural-network-cnn">Convolutional Neural Network (CNN):</h1>
+
+<p>[TOC]</p>
+
+<h2 id="convolutional-neural-network-cnn-1">Convolutional Neural Network (CNN):</h2>
+
+<ul>
+  <li><a href="https://adventuresinmachinelearning.com/convolutional-neural-networks-tutorial-in-pytorch/">Convolutional Neural Networks Tutorial in PyTorch</a></li>
+  <li><a href="https://www.youtube.com/watch?v=FmpDIaiMIeA">Youtube: How Convolutional Neural Networks work</a></li>
+  <li><a href="https://d2l.ai/chapter_convolutional-neural-networks/padding-and-strides.html">d2l: Padding and Stride</a></li>
+  <li><a href="https://iq.opengenus.org/output-size-of-convolution/">Calculate output size of Convolution</a></li>
+  <li><a href="https://medium.com/@thinkai.org/using-pytorch-for-building-a-convolutional-neural-network-cnn-model-6e47ffb61b88">Using PyTorch for building a Convolutional Neural Network (CNN) model</a></li>
+</ul>
+:ET

@@ -1,0 +1,44 @@
+I"5<h1 id="generative-adversarial-networks-gan">Generative Adversarial Networks (GAN)</h1>
+
+<p>[TOC]</p>
+
+<h2 id="generic-resources">Generic Resources:</h2>
+
+<p><em>crickets chirp</em></p>
+
+<h2 id="generative-adversarial-networks-gan-1">Generative Adversarial Networks (GAN):</h2>
+
+<ul>
+  <li><a href="https://drscotthawley.github.io/blog/2017/05/05/Crash-Course-On-GANs.html">Scott Hawley: Crash Course On GANs</a></li>
+  <li><a href="https://beckham.nz/2021/06/28/training-gans.html">Training GANs The Right Way</a></li>
+</ul>
+
+<h2 id="deep-convolutional-generative-adversarial-networks-dcgans">Deep Convolutional Generative Adversarial Networks (DCGANs)</h2>
+
+<ul>
+  <li><a href="https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html">pytorch tutorial of DCGAN</a></li>
+</ul>
+
+<h2 id="papers">Papers:</h2>
+
+<h3 id="generative-adversarial-networks-gan-2">Generative Adversarial Networks (GAN):</h3>
+
+<ul>
+  <li><a href="https://arxiv.org/pdf/1406.2661.pdf">Paper: Generative Adversarial Nets</a>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=eyxmSmjmNS0&amp;list=PL1v8zpldgH3qQB5Pz6ZSTTDLu0BjAJYNf&amp;index=4">Yannics Video On GAN</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="deep-convolutional-generative-adversarial-networks">Deep Convolutional Generative Adversarial Networks</h3>
+
+<ul>
+  <li><a href="https://arxiv.org/abs/1511.06434">Paper: Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks</a>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=EYrt7fGyA08">DC-GAN explained</a></li>
+    </ul>
+  </li>
+</ul>
+
+:ET

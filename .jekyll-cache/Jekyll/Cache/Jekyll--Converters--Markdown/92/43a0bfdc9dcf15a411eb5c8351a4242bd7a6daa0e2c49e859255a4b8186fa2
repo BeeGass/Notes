@@ -1,0 +1,40 @@
+I"(<h1 id="variational-autoencoders-vae">Variational Autoencoders (VAE)</h1>
+
+<p>[TOC]</p>
+
+<h2 id="variational-inference">Variational Inference:</h2>
+
+<h2 id="variational-autoencoders-vae-1">Variational Autoencoders (VAE):</h2>
+
+<ul>
+  <li><a href="https://paperswithcode.com/method/vae">Papers With Code: VAE</a></li>
+  <li><a href="https://ermongroup.github.io/cs228-notes/extras/vae/">CS-228: VAE section notes</a></li>
+  <li><a href="https://www.jeremyjordan.me/autoencoders/">Jeremy Jordan’s part 1: Introduction to autoencoders.</a></li>
+  <li><a href="https://www.jeremyjordan.me/variational-autoencoders/">Jeremy Jordan’s part 2: VAE</a></li>
+  <li><a href="https://jaan.io/what-is-variational-autoencoder-vae-tutorial/">Understanding Variational Autoencoders (VAEs)</a></li>
+  <li><a href="https://avandekleut.github.io/vae/">Variational AutoEncoders (VAE) with PyTorch</a></li>
+  <li><a href="https://cedar.buffalo.edu/~srihari/CSE676/21.3-VAE-Apps.pdf">Helpful slides: Variational Autoencoder Applications</a></li>
+</ul>
+
+<h2 id="beta-variational-autoencoders-beta-vae">Beta-Variational Autoencoders (Beta-VAE):</h2>
+
+<ul>
+  <li><a href="https://lilianweng.github.io/lil-log/2018/08/12/from-autoencoder-to-beta-vae.html">From Autoencoder to Beta-VAE</a></li>
+</ul>
+
+<h2 id="papers">Papers:</h2>
+
+<h3 id="variational-inference-1">Variational Inference:</h3>
+
+<ul>
+  <li><a href="https://arxiv.org/abs/1601.00670">Paper: Variational Inference: A Review for Statisticians</a></li>
+</ul>
+
+<h3 id="variational-autoencoders-vae-2">Variational Autoencoders (VAE):</h3>
+
+<ul>
+  <li><a href="https://arxiv.org/pdf/1606.05908.pdf%20http://arxiv.org/abs/1606.05908.pdf">Paper: Tutorial on Variational Autoencoders</a></li>
+  <li><a href="https://arxiv.org/pdf/1312.6114.pdf">Paper: Auto-Encoding Variational Bayes</a></li>
+</ul>
+
+:ET

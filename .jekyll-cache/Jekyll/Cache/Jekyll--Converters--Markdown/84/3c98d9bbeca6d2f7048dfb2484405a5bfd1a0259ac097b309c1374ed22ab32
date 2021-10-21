@@ -1,0 +1,67 @@
+I"�
+<h1 id="notation">Notation:</h1>
+
+<h2 id="variables">Variables</h2>
+
+<ul>
+  <li>Scalars are non-bold and <em>italic</em>: <em>y, $\hat{y}$</em></li>
+  <li>Vectors are lower-case and <strong>bold:</strong> z, <strong>w</strong></li>
+  <li>Matrices are UPPER-CASE and <strong>bold: X</strong></li>
+  <li>$^T$ indicates matrix transpose: $X^{T}$</li>
+  <li>(Parenthesized) $^{superscripts}$ specify the example: $x^{(3)}$</li>
+  <li>Vectors are column vectors unless noted otherwise.</li>
+  <li>n refers to number of examples; i is the index variable</li>
+  <li>m refers to number of features; j is the index variable.</li>
+  <li>$\mathbb{E}$ refers to the expectation. “expected value”</li>
+</ul>
+
+<h2 id="multiplication">Multiplication</h2>
+
+<ul>
+  <li>Multiplication of matrices <strong>A</strong> and <strong>B</strong>:
+    <ul>
+      <li>Only possible when: <strong>A</strong> is (n x k) and <strong>B</strong> is (k x m)</li>
+      <li>Result: (n x m)</li>
+    </ul>
+  </li>
+  <li>the <strong>inner product</strong> between two column vectors (same length) <strong>x</strong>, <strong>y</strong> can be written as $x^{T}y$. The result is a scalar</li>
+  <li>the <strong>outer product</strong> between two column vectors (same length) <strong>x</strong>, <strong>y</strong> can be written as $xy^{T}$. The result is a matrix</li>
+  <li>The <strong>Hadamard</strong> (element-wise product between two matrices <strong>A</strong> and <strong>B</strong> is written as <strong>A</strong> $\odot$ <strong>B</strong></li>
+</ul>
+
+<h2 id="derivatives">Derivatives</h2>
+
+<ul>
+  <li>
+    <p>The <strong>gradient</strong> of a function <strong><em>f: $\Reals^{m} \to \Reals$</em></strong> w.r.t. input <strong>x</strong> is the column vector of first partial derivatives:</p>
+
+\[⁍\]
+  </li>
+</ul>
+
+<p>The <strong>Jacobian</strong> of a function $f$: $\Reals^{m} \to \Reals^{n}$ w.r.t. input <strong>x</strong> is the matrix of first partial derivatives:</p>
+
+<p>\(\)Jac[f] = \begin{bmatrix}
+				\frac{\delta f_1}{\delta x_1} &amp; … &amp; \frac{\delta f_1}{\delta x_m} 
+				\ … &amp; … &amp; …\ 
+				\frac{\delta f_n}{\delta x_1} &amp; … &amp; \frac{\delta f_n}{\delta x_m} 
+			\end{bmatrix}
+$$</p>
+
+<ul>
+  <li>Note that, for n=1,
+\(\nabla_xf = Jac[f]^{T}\)</li>
+</ul>
+
+<p>The <strong>Hessian</strong> of a function $f: \Reals^{m} \to \Reals$ w.r.t. input <strong>x</strong> is the matrix of second partial derivatives:
+\(H[f] = \begin{bmatrix} 
+			\frac{\delta^{2}f}{\delta{x_1} \delta{x_1}} &amp; ... &amp; \frac{\delta^{2}f}{\delta{x_1} \delta{x_m}} 
+			\\ ... &amp; ... &amp; ...\\ 
+			\frac{\delta^{2}f}{\delta{x_m} \delta{x_1}} &amp; ... &amp; \frac{\delta^{2}}{\delta{x_m} \delta{x_m}} 
+		\end{bmatrix}\)</p>
+
+<ul>
+  <li>Note that
+\(H[f] = Jac[\nabla_xf]\)</li>
+</ul>
+:ET

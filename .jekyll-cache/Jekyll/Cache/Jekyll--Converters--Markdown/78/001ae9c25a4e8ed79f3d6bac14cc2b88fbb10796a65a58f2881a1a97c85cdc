@@ -1,0 +1,181 @@
+I"a<h1 id="course-outline">Course Outline</h1>
+
+<p>[TOC]</p>
+
+<hr />
+
+<h1 id="homework">Homework:</h1>
+
+<h2 id="homework-1">Homework 1:</h2>
+<ul>
+  <li><a href="Homeworks/hw1/Homework1.md">Homework 1</a></li>
+</ul>
+
+<h2 id="homework-2">Homework 2:</h2>
+<ul>
+  <li><a href="Homeworks/hw2/Homework2.md">Homework 2</a></li>
+</ul>
+
+<h2 id="homework-3">Homework 3:</h2>
+<ul>
+  <li><a href="Homeworks/hw3/Homework3.md">Homework 3</a></li>
+</ul>
+
+<h2 id="homework-4">Homework 4:</h2>
+<ul>
+  <li><a href="Homeworks/hw4/Homework4.md">Homework 4</a></li>
+</ul>
+
+<h2 id="homework-5">Homework 5:</h2>
+<ul>
+  <li><a href="Homeworks/hw5/Homework5.md">Homework 5</a></li>
+</ul>
+
+<h2 id="homework-6">Homework 6:</h2>
+<ul>
+  <li><a href="Homeworks/hw6/Homework6.md">Homework 6</a></li>
+</ul>
+
+<h2 id="homework-7">Homework 7:</h2>
+<ul>
+  <li><a href="Homeworks/hw7/Homework7.md">Homework 7</a></li>
+</ul>
+
+<hr />
+
+<h1 id="part-1-shallow-neural-networks--optimization-methods">Part 1: Shallow Neural Networks &amp; Optimization Methods</h1>
+
+<h2 id="mathematical-fundamentals"><strong>Mathematical Fundamentals:</strong></h2>
+
+<h3 id="notation">Notation</h3>
+
+<ul>
+  <li><a href="notation/notation.md">Notation</a></li>
+</ul>
+
+<h3 id="introduction">Introduction</h3>
+
+<ul>
+  <li><a href="Lect1/notes1.md">Notes 1</a></li>
+</ul>
+
+<h3 id="linear-algebra">Linear Algebra</h3>
+
+<h3 id="probability-theory">Probability Theory</h3>
+
+<ul>
+  <li><a href="Lect3/notes3.md">Notes 3</a></li>
+</ul>
+
+<h2 id="shallow-architectures"><strong>Shallow Architectures:</strong></h2>
+
+<h3 id="linear-regression">Linear Regression</h3>
+
+<ul>
+  <li><a href="Lect2/notes2.md">Notes 2</a></li>
+</ul>
+
+<h3 id="logistic--softmax-regression">Logistic &amp; Softmax Regression</h3>
+
+<ul>
+  <li><a href="Lect5/notes5.md">Notes 5</a></li>
+</ul>
+
+<h2 id="latent-variable-models"><strong>Latent Variable Models:</strong></h2>
+
+<h3 id="principal-component-analysis-pca">Principal Component Analysis (PCA)</h3>
+
+<h2 id="first-order-optimization-methods"><strong>First-Order Optimization Methods:</strong></h2>
+
+<h3 id="gradient-descent">Gradient Descent</h3>
+
+<ul>
+  <li><a href="Lect2/notes2.md">Notes 2</a></li>
+</ul>
+
+<h3 id="stochastic-gradient-descent-sgd">Stochastic Gradient Descent (SGD)</h3>
+
+<ul>
+  <li><a href="Lect2/notes2.md">Notes 2</a></li>
+  <li><a href="Lect3/notes3.md">Notes 3</a></li>
+</ul>
+
+<h2 id="second-order-optimization-methods"><strong>Second-Order Optimization Methods:</strong></h2>
+
+<h3 id="newtons-method">Newton’s Method</h3>
+
+<h2 id="data-pre-processing"><strong>Data pre-processing:</strong></h2>
+
+<h3 id="whitening-transformations">Whitening transformations</h3>
+
+<ul>
+  <li><a href="Lect4/notes4.md">Notes 4</a></li>
+</ul>
+
+<hr />
+
+<h1 id="part-2-deep-neural-networks--optimization-methods">Part 2: Deep Neural Networks &amp; Optimization Methods</h1>
+
+<h2 id="feed-forward-architectures"><strong>Feed-forward Architectures:</strong></h2>
+
+<h3 id="multi-layer-perceptrons-mlps">Multi-layer perceptrons (MLPs)</h3>
+
+<h3 id="auto-encoders">Auto-encoders</h3>
+
+<h3 id="convolutional-neural-networks-cnns">Convolutional neural networks (CNNs)</h3>
+
+<h2 id="recurrent-architectures"><strong>Recurrent architectures:</strong></h2>
+
+<h3 id="recurrent-neural-networks-rnns">Recurrent neural networks (RNNs)</h3>
+
+<h2 id="generative-architectures"><strong>Generative architectures:</strong></h2>
+
+<h3 id="variational-auto-encoders-vaes">Variational auto-encoders (VAEs)</h3>
+
+<h3 id="generative-adversarial-networks-gans">Generative-adversarial networks (GANs)</h3>
+<h2 id="geometric-deep-learning"><strong>Geometric Deep Learning:</strong></h2>
+
+<h3 id="graph-convolutional-nns">Graph convolutional NNs</h3>
+
+<h2 id="optimization-techniques"><strong>Optimization techniques:</strong></h2>
+
+<h3 id="activation-functions">Activation functions</h3>
+
+<h3 id="batchlayergroup-normalization">Batch/layer/group normalization</h3>
+
+<h3 id="weight-initialization">Weight initialization</h3>
+
+<h3 id="second-order-approximation-methods">Second-order approximation methods</h3>
+
+<h2 id="regularization-techniques"><strong>Regularization techniques:</strong></h2>
+
+<h3 id="weight-decay">Weight decay</h3>
+
+<h3 id="dropout">Dropout</h3>
+
+<h3 id="data-augmentation">Data augmentation</h3>
+
+<h3 id="pre-training">Pre-training</h3>
+
+<h3 id="weight-sharing">Weight sharing</h3>
+
+<hr />
+
+<h1 id="part-3-state-of-the-art-deep-learning--applications">Part 3: State-of-the-art deep learning &amp; applications</h1>
+
+<h2 id="recent-papers-from"><strong>Recent Papers From:</strong></h2>
+
+<h3 id="neurips">NeurIPS</h3>
+
+<h3 id="icml">ICML</h3>
+
+<h3 id="iclr">ICLR</h3>
+
+<h3 id="aaai">AAAI</h3>
+
+<h3 id="cvpr">CVPR</h3>
+
+<h3 id="arxiv">Arxiv</h3>
+
+<hr />
+:ET

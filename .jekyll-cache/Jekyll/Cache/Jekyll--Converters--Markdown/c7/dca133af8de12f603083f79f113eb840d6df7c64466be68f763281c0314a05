@@ -1,0 +1,441 @@
+I"�L<p>[TOC]</p>
+
+<h2 id="optimization-of-ml-models">Optimization Of ML Models</h2>
+
+<p>Gradient descent is guaranteed to converge to a local minimum (eventually) if the learning rate is small enough relative to the steepness of $f$.</p>
+
+<p>A function $f: \mathbb{R}^{m} \rightarrow \mathbb{R}$ is Lipschitz-continuous if: 
+\(\exists L: \forall x, y \in \mathbb{R}^{m}: ||f(x) - f(y)||_{2} \leq L||x -y||_{2}\)
+$L$ is essentially an upper bound on the absolute slope of $f$.</p>
+
+<p>this can guarentee a maximum slope due to the change of $x$ as it relates to $y$.</p>
+
+<p>For learning rate $\epsilon \leq \frac{1}{L}$, gradient descent will converge to a local minimum linearly, i.e., the error is O($\frac{1}{k}$) in the iterations $k$.</p>
+
+<p>With linear regression, the cost function $f_{MSE}$ has a single local minimum w.r.t. the weights w:</p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization of ML models.png" alt="" /></p>
+
+<p>As long as our learning rate is small enough, we will find the optimal w.</p>
+
+<h2 id="optimization-what-can-go-wrong">Optimization: What Can Go Wrong?</h2>
+
+<p>In general ML and DL models, optimization is usually not so simple, due to:</p>
+
+<ol>
+  <li>
+    <p>Presence of multiple local minima</p>
+
+    <p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Bad initialization of the weights w.</p>
+
+    <p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong2.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Learning rate is too small.</p>
+
+    <p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong3.png" alt="" /></p>
+
+    <p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong3.png" alt="" /></p>
+
+    <p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong3.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Learning rate is too large.</p>
+
+    <p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong4.png" alt="" /></p>
+
+    <p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong5.png" alt="" /></p>
+
+    <p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong6.png" alt="" /></p>
+  </li>
+</ol>
+
+<p>With multidimensional weight vectors, badly chosen learning rates can cause more subtle problems.</p>
+
+<p>Consider the cost $f$ whose level sets are shown below:</p>
+
+<p>Gradient descent guides the search along the direction of steepest decrease in $f$.</p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong7.png" alt="" /></p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong8.png" alt="" /></p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong9.png" alt="" /></p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong10.png" alt="" /></p>
+
+<p>With multidimensional weight vectors, badly chosen learning rates can cause more subtle problems.</p>
+
+<p>But what if the level sets are ellipsoids instead of spheres?</p>
+
+<ul>
+  <li>If we are lucky, we still converge quickly.</li>
+</ul>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong11.png" alt="" /></p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong12.png" alt="" /></p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong13.png" alt="" /></p>
+
+<ul>
+  <li>If we are unlucky, convergence is very slow.</li>
+</ul>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong14.png" alt="" /></p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong15.png" alt="" /></p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong16.png" alt="" /></p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong17.png" alt="" /></p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Optimization- What Can Go Wrong18.png" alt="" /></p>
+
+<h2 id="convexity">Convexity</h2>
+
+<h3 id="convex-ml-models">Convex ML Models:</h3>
+
+<p>Linear regression has a loss function that is convex.</p>
+
+<p>With a convex function $f$, every local minimum is also a global minimum.</p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Convex ML models1.png" alt="" /></p>
+
+<p>Convex functions are ideal for conducting gradient descent.</p>
+
+<h3 id="convexity-in-1-d">Convexity in 1-D</h3>
+
+<p>How can we tell if a 1-D function $f$ is convex?</p>
+
+<p>A: second derivative is always non-negative</p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Convex ML models2.png" alt="" /></p>
+
+<p>What property of $f$ ensures there is only one local minimum?</p>
+
+<ul>
+  <li>From left to right, the slope of $f$ never decreases.
+    <ul>
+      <li>he derivative of the slope is always non-negative.</li>
+      <li>the second derivative of $f$ is always non-negative.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="convexity-in-higher-dimensions">Convexity In Higher Dimensions</h3>
+
+<p>For higher-dimensional $f$, convexity is determined by the the Hessian of $f$.</p>
+
+<p>\(H[f] = \begin{bmatrix}
+	\frac{\partial^{2}f}{\partial{x_{1}}\partial{x_{1}}} &amp; ... &amp; \frac{\partial^{2}f}{\partial{x_{1}}\partial{x_{m}}} \\ 
+	... &amp; ... &amp; ... \\ 
+	\frac{\partial^{2}f}{\partial{x_{m}}\partial{x_{1}}} &amp;  	... &amp; \frac{\partial^{2}f}{\partial{x_{m}}\partial{x_{m}}} \\
+\end{bmatrix}\)
+For $f: \mathbb{R}^{m} \rightarrow \mathbb{R}, \; f$ is convex if the Hessian matrix is positive semi-definite for every input $x$</p>
+
+<h3 id="positive-semi-definite">Positive Semi-Definite</h3>
+
+<p>positive semi-definite (PSD): matrix analog of being “non-negative”.</p>
+
+<p>A real symmetric matrix $\textbf{A}$ is positive semi-definite (PSD) if (equivalent conditions):</p>
+
+<ul>
+  <li>All its eigenvalues are $\geq 0$
+    <ul>
+      <li>In particular, if A happens to be diagonal, then A is PSD if its eigenvalues are the diagonal elements.</li>
+    </ul>
+  </li>
+  <li>For every vector $v: v^{T}Av \geq 0$
+    <ul>
+      <li>Therefore: If there exists any vector $v$ such that $v^{T}Av &lt; 0$, then A is not PSD</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="example">Example:</h3>
+
+<p>Suppose:
+\(f(x, y) = 3x^{2} + 2y^{2} -2\)
+Then the first derivatives are:
+\(\frac{\partial f}{\partial x} = 6x \; \; \; \frac{\partial f}{\partial x} = 4y\)
+The Hessian matrix is therefore:</p>
+
+<p>\(H[f] = 
+\begin{bmatrix}
+	\frac{\partial^{2}f}{\partial{x} \partial{x}} &amp; \frac{\partial^{2}f}{\partial{x}\partial{y}} \\ 
+	\frac{\partial^{2}f}{\partial{y}\partial{x}} &amp; \frac{\partial^{2}f}{\partial{y}\partial{y}} \\
+\end{bmatrix} = 
+\begin{bmatrix}
+	6 &amp; 0 \\ 
+	0 &amp; 4 \\
+\end{bmatrix}\)
+Notice that $H$ for this f does not depend on $(x,y)$.</p>
+
+<p>Also, $H$ is a diagonal matrix (with 6 and 4 on the diagonal). Hence, the eigenvalues are just 6 and 4. Since they are both non-negative, then $f$ is convex.</p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Convex ML models3.png" alt="" /></p>
+
+<h3 id="exercise">Exercise:</h3>
+
+<p>Recall: if $H$ is the Hessian of $f$, then f is convex if — at every $(x,y)$ — we can show (equivalently):</p>
+
+<ul>
+  <li>$v^{T}Av \geq 0$ for every $\textbf{v}$</li>
+  <li>All eigenvalues of $H$ are non-negative.</li>
+</ul>
+
+<p>Which of the following function(s) are convex?</p>
+
+<ol>
+  <li>$f(x, y) = x^{2} + y + 5$</li>
+</ol>
+
+<p>A: is convex
+\(\begin{align*}
+	\frac{\partial f}{\partial x} &amp;= 2x \\
+	\frac{\partial^{2}f}{\partial x^{2}} &amp;= 2 \\ \\ 
+	\frac{\partial f}{\partial y} &amp;= 1 \\
+	\frac{\partial^{2}f}{\partial y^{2}} &amp;= 0 \\ \\
+	H &amp;= \begin{bmatrix}
+			2 &amp; 0 \\ 
+			0 &amp; 0 \\
+		\end{bmatrix} 
+\end{align*}\)</p>
+
+<ol>
+  <li>$f(x, y) = x^{4} + xy + x^{2}$</li>
+</ol>
+
+<p>A: is not convex</p>
+
+<p>note: take the second derivative in terms of both $x$ and $y$ after having taking the first derivative in both $x$ and $y$. 
+\(\begin{align*}
+	\frac{\partial f}{\partial x} &amp;= 4x^{3} + y + 2x \\
+	\frac{\partial f^{2}}{\partial y \partial x} &amp;= 1 \\
+	&amp;\text{ and/or } \\
+	\frac{\partial^{2}f}{\partial x^{2}} &amp;= 12x^{2} + 2 \\ \\ \\ 
+	\frac{\partial f}{\partial y} &amp;= x \\
+	\frac{\partial f^{2}}{\partial x \partial y} &amp;= 1 \\
+	&amp;\text{ and/or } \\
+	\frac{\partial^{2}f}{\partial y^{2}} &amp;= 0 \\ \\ \\
+	H &amp;= \begin{bmatrix}
+			12x^{2} + 2 &amp; 1 \\ 
+			1 &amp; 0 \\
+		\end{bmatrix} 
+\end{align*}\)
+One instance where $f(x, y) = x^{4} + xy + x^{2}$ is not PSD
+\(\begin{align*}
+	H &amp;= \begin{bmatrix}
+			12x^{2} + 2 &amp; 1 \\ 
+			1 &amp; 0 \\
+		\end{bmatrix} \\ \\
+	x &amp;= 1 \\ \\
+	v &amp;= \begin{bmatrix}
+			-1 \\ 
+			15 \\
+		\end{bmatrix} \\ \\ 
+	v^{T}Hv &amp;= -16
+\end{align*}\)</p>
+
+<h3 id="convexity-of-linear-regression">Convexity Of Linear Regression</h3>
+
+<p>How do we know linear regression is a convex ML model?</p>
+
+<p>First, recall that, for any matrices $\textbf{A}$,  $\textbf{B}$ that can be multiplied:</p>
+
+<ul>
+  <li>$(\textbf{AB})^{T} = \textbf{B}^{T} \textbf{A}^{T}$</li>
+</ul>
+
+<p>Next, recall the gradient and Hessian of $f_{MSE}$ (for linear regression):
+\(\begin{align*}
+	f_{MSE} &amp;= \frac{1}{2n} (X^{T}w - y)^{T}(X^{T}w - y) \\ \\
+	\nabla_{w} f_{MSE} &amp;= \frac{1}{n} X(\hat{y} - y) \\ \\
+	&amp;= \frac{1}{n} X(X^{T}w - y) \\ \\
+	H &amp;= \frac{1}{n}XX^{T}
+\end{align*}\)
+For any vector $v$, we have:
+\(\begin{align*} 
+	v^{T}XX^{T}v &amp;= (X^{T}v)^T(X^{T}v) \\
+	&amp;\geq 0
+\end{align*}\)</p>
+
+<h3 id="convex-ml-models-1">Convex ML Models:</h3>
+
+<p>Prominent convex models in ML include linear regression, logistic regression, softmax regression, and support vector machines (SVM).</p>
+
+<p>However, models in deep learning are generally not convex.</p>
+
+<ul>
+  <li>Much DL research is devoted to how to optimize the weights to deliver good generalization performance.</li>
+</ul>
+
+<h2 id="non-spherical-loss-functions">Non-Spherical Loss Functions:</h2>
+
+<p>As described previously, loss functions that are non-spherical can make hill climbing via gradient descent more difficult:</p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Non-spherical loss functions.png" alt="" /></p>
+
+<h3 id="curvature">Curvature:</h3>
+
+<p>The problem is that gradient descent only considers slope (1st-order effect), i.e., how $f$ changes with $\textbf{w}$.</p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Non-spherical loss functions2.png" alt="" /></p>
+
+<p>The gradient does not consider how the slope itselfchanges with $w$ (2nd-order effect).</p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Non-spherical loss functions3.png" alt="" /></p>
+
+<p>For linear regression with cost $f_{MSE}$,
+\(\begin{align*}
+	f_{MSE} &amp;= \frac{1}{2n} (X^{T}w - y)^{T}(X^{T}w - y) \\
+\end{align*}\)
+the Hessian is:
+\(H[f](w) = \frac{1}{n}XX^{T}\)
+Hence, $H$ is constant and is proportional to the (uncentered) auto-covariance matrix of $\textbf{X}$.
+\(\mathbb{E}[(X -\mathbb{E}[X]) \; (X - \mathbb{E}[X])^{T}]\)</p>
+
+<p>To accelerate optimization of the weights, we can either:</p>
+
+<ul>
+  <li>Alter the cost function by transforming the input data.</li>
+  <li>Change our optimization method to account for the curvature.</li>
+</ul>
+
+<h2 id="feature-transformations">Feature Transformations</h2>
+
+<h3 id="whitening-transformations">Whitening Transformations:</h3>
+
+<p>Gradient descent works best when the level sets of the cost function are spherical.</p>
+
+<p>note: this is similar to batch normalization (“cheap version of batch normalization”)</p>
+
+<p>We can “spherize” the input features using a whitening transformation, which makes the auto-covariance matrix equal the identity matrix $I$.</p>
+
+<p>We compute this transformation on the training data, and then apply it to both training and testing data.</p>
+
+<p>We can find a whitening transform T as follows:</p>
+
+<ul>
+  <li>
+    <p>Let the auto-covariance* of our training data be $XX^{T}$.</p>
+
+    <ul>
+      <li>Note (eigen decomposition):</li>
+    </ul>
+
+\[\begin{align*}
+	XX^{T}v_{1} &amp;= \lambda_{1} v_{1}  \\
+	XX^{T}v_{2} &amp;= \lambda_{2} v_{2}  \\
+	&amp;... \\
+	XX^{T}v_{m} &amp;= \lambda_{m} v_{m}  \\
+\end{align*}\]
+  </li>
+  <li>
+    <p>We can rewrite its eigendecomposition as:
+\(\begin{align*}
+	\Phi &amp;= \text{contains all eigenvectors/values *as columns} \\ 
+	\Lambda &amp;= \text{elements of the diagnol matrix} \\ \\
+	XX^{T}\Phi &amp;= \Phi \Lambda
+\end{align*}\)</p>
+
+    <ul>
+      <li>where $\Phi$ is the matrix of eigenvectors and Λ is the corresponding diagonal matrix of eigenvalues.</li>
+    </ul>
+  </li>
+  <li>
+    <p>For real-valued features, $XX^{T}$ is real and symmetric; hence, $\Phi$ is orthonormal. Also, $\Lambda$ is non-negative.</p>
+  </li>
+  <li>
+    <p>Therefore, we can multiply both sides by $\Phi^{T}$:</p>
+  </li>
+</ul>
+
+\[\begin{align*}
+	XX^{T}\Phi &amp;= \Phi \Lambda \\
+	\Phi^{T} XX^{T} \Phi &amp;= \Phi^{T} \Phi \Lambda = \Lambda \\
+\end{align*}\]
+
+<p>Since $\Lambda$ is diagonal and non-negative, we can easily compute $\Lambda^{-\frac{1}{2}}$</p>
+
+<p>We then multiply both sides (2x) to obtain $I$ on the RHS.
+\(\begin{align*}
+	\Lambda^{-\frac{1}{2}^{T}}\Phi^{T} XX^{T} \Phi \Lambda^{-\frac{1}{2}} &amp;= \Lambda^{-\frac{1}{2}^{T}} \Lambda \Lambda^{-\frac{1}{2}} \\
+	(\Lambda^{-\frac{1}{2}^{T}}\Phi^{T}X)(\Lambda^{-\frac{1}{2}^{T}}\Phi^{T}X)^{T} &amp;= I \\
+	(TX)(TX)^{T} &amp;= I 
+\end{align*}\)
+We have thus derived a transform $T = \Lambda^{-\frac{1}{2}^{T}} \Phi^{T}$ such that the (uncentered) auto-covariance of the transformed data $\tilde{X} = TX$ is the identity matrix $\textbf{I}$.</p>
+
+<p>$\textbf{T}$ transforms the cost from $f_{MSE}(w;X)$ to $f_{MSE}(w;\tilde{X})$</p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Whitening Transformations.png" alt="" /></p>
+
+<p>This will transform the ellipsoidal landscape into a circular landscape</p>
+
+<p>Whitening transformations are a technique from “classical” ML rather than DL.</p>
+
+<ul>
+  <li>Time cost is O(m3), which for high-dimensional feature spaces is too large.</li>
+</ul>
+
+<p>However, whitening has inspired modern DL techniques such as batch normalization (Szegedy &amp; Ioffe, 2015) (more to come later) and concept whitening (Chen et al. 2020).</p>
+
+<h2 id="second-order-methods-for-optimization">Second-order Methods For Optimization:</h2>
+
+<p>An alternative to changing the input features is to use an optimization procedure that considers the 2nd- (or even higher) order terms of the loss function</p>
+
+<p>From the classical optimization literature, one of the most common method is Newton-Raphson (aka Newton’s method).</p>
+
+<h3 id="newtons-method">Newton’s Method:</h3>
+
+<p>When applicable, it offers faster convergence guarantees (quadratic rather than linear convergence).</p>
+
+<p>Newton’s method is an iterative method for finding the roots of a real-valued function f, i.e., w such that $f(w) = 0$.</p>
+
+<ul>
+  <li>This is useful because we can use it to maximize/minimize a function by finding the roots of the gradient.</li>
+</ul>
+
+<p>Let the 2nd-order Taylor expansion of $f$ around $w^{(k)}$ be:
+\(\begin{align*}
+	f(w) &amp;\approx f(w^{(k)}) + \nabla_{w}f(w^{(k)})(w - w^{(k)}) + \frac{1}{2}(w - w^{(k)})^{T} \textbf{H}(w - w^{(k)}) \\
+	\nabla_{w} f(w) &amp;\approx \nabla_{w} f(w^{(k)}) + \frac{1}{2} \nabla_{w} (w^{T}Hw - w^{T}Hw^{(k)} - w^{(k)}Hw + w^{(k)^{T}}Hw^{(k)}) \\
+	&amp;= \nabla_{w} f(w^{(k)}) + Hw - \frac{1}{2}Hw^{(k)} - \frac{1}{2}Hw^{(k)} \\
+	&amp;= \nabla_{w} f(w^{(k)}) + Hw - Hw^{(k)} \\ \\ \\
+	0 &amp;= \nabla_{w} f(w^{(k)}) + Hw - Hw^{(k)} \\ 
+    Hw &amp;= Hw{(k)} - \nabla_{w}f(w^{(k)}) \\
+    w^{(k+1)} &amp;= w^{(k)} - H^{-1}\nabla_{w}f(w^{(k)})
+\end{align*}\)
+where $\textbf{H}$ is the Hessian of f evaluated at $\textbf{w}^{(k)}$</p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Newton's Method.png" alt="" /></p>
+
+<p><img src="C:\Users\Bryan\OneDrive - Worcester Polytechnic Institute (wpi.edu)\Documents\Coding\github\Notes\notes\Deep-Learning\CS-541\pictures\Newton's Method2.png" alt="" /></p>
+
+<p>Note that, compared to gradient descent, the update rule in Newton’s method replaces the step size $\epsilon$ with the Hessian evaluated at $w^{(k)}$:</p>
+
+<p>Gradient descent:</p>
+
+<p>$w^{(k+1)} = w^{(k)} - \epsilon \nabla_{w}f(w^{(k)})$</p>
+
+<p>Newton’s method:</p>
+
+<p>$w^{(k+1)} = w^{(k)} - H^{-1} \nabla_{w}f(w^{(k)})$</p>
+
+<p>Newton’s method requires computation of $H$.</p>
+
+<ul>
+  <li>For high-dimensional feature spaces, $H$ is huge, i.e., $O(m^{3})$.</li>
+</ul>
+
+<p>Hence, Newton’s method in its pure form is impractical for DL.</p>
+
+<p>However, it has inspired modern DL optimization methods such as the Adam optimizer (Kingma &amp; Ba 2014)(more to come later).</p>
+
+<h2 id="footnotes">Footnotes</h2>
+
+:ET

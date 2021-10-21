@@ -1,0 +1,121 @@
+I"<h2 id="my-wish-list-in-no-particular-order">My Wish List In No Particular Order</h2>
+
+<ul>
+  <li><a href="https://github.com/floodsung/Deep-Learning-Papers-Reading-Roadmap">Deep Learning Papers Reading Roadmap</a></li>
+</ul>
+
+<h2 id="softmax"><strong>Softmax</strong>:</h2>
+
+<h3 id="tutorialexplanation">Tutorial/Explanation</h3>
+
+<ul>
+  <li><a href="https://mmuratarat.github.io/2019-01-27/derivation-of-softmax-function">Derivation of Softmax Function</a></li>
+</ul>
+
+<h3 id="paper">Paper</h3>
+
+<p>Not really needed to understand</p>
+
+<h2 id="lstm"><strong>LSTM</strong>:</h2>
+
+<h3 id="tutorialexplanation-1">Tutorial/Explanation</h3>
+
+<ul>
+  <li><a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/">Understanding LSTM Networks</a></li>
+  <li><a href="https://arxiv.org/pdf/1909.09586.pdf">Understanding LSTM – a tutorial into Long Short-Term Memory Recurrent Neural Networks</a></li>
+  <li><a href="https://iamtrask.github.io/2015/11/15/anyone-can-code-lstm/">Anyone Can Learn To Code an LSTM-RNN in Python (Part 1: RNN)</a></li>
+</ul>
+
+<h3 id="paper-1">Paper</h3>
+
+<p>Not really needed to understand</p>
+
+<h2 id="auto-encoders"><strong>Auto-Encoders</strong>:</h2>
+
+<h3 id="tutorialexplanation-2">Tutorial/Explanation</h3>
+
+<ul>
+  <li><a href="https://arxiv.org/pdf/1606.05908.pdf%20http://arxiv.org/abs/1606.05908.pdf">Tutorial on Variational Autoencoders</a></li>
+  <li><a href="https://lilianweng.github.io/lil-log/2018/08/12/from-autoencoder-to-beta-vae.html">From Autoencoder to Beta-VAE</a></li>
+  <li><a href="https://paperswithcode.com/method/vae">Papers With Code: Variational Autoencoder</a></li>
+</ul>
+
+<h3 id="paper-2">Paper</h3>
+
+<ul>
+  <li><a href="https://arxiv.org/abs/1601.00670">Variational Inference: A Review for Statisticians</a>: read this before “Auto-Encoding Variational Bayes”</li>
+  <li><a href="https://arxiv.org/pdf/1312.6114.pdf">Auto-Encoding Variational Bayes</a></li>
+</ul>
+
+<h2 id="generative-adversarial-nets-gans"><strong>Generative Adversarial Nets (GANs)</strong>:</h2>
+
+<h3 id="tutorialexplanation-3">Tutorial/Explanation</h3>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=eyxmSmjmNS0&amp;list=PL1v8zpldgH3qQB5Pz6ZSTTDLu0BjAJYNf&amp;index=3">Yannic: Generative Adversarial Networks</a></li>
+  <li><a href="https://drscotthawley.github.io/blog/2017/05/05/Crash-Course-On-GANs.html">Dr. Scott Hawley’s Crash Course On GANs</a></li>
+  <li><a href="https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html">DC-GAN</a>: This comes after GANs</li>
+</ul>
+
+<h3 id="paper-3">Paper</h3>
+
+<ul>
+  <li><a href="https://arxiv.org/pdf/1406.2661.pdf">Generative Adversarial Nets</a></li>
+</ul>
+
+<h2 id="reinforcement-learning"><strong>Reinforcement Learning</strong>:</h2>
+
+<h3 id="tutorialexplanation-4">Tutorial/Explanation</h3>
+
+<ul>
+  <li><a href="https://medium.com/analytics-vidhya/reinforcement-learning-beginners-approach-chapter-i-689f999cf572">Nice Overview</a></li>
+  <li><a href="https://www.youtube.com/watch?v=rFwQDDbYTm4&amp;list=PL1v8zpldgH3qQB5Pz6ZSTTDLu0BjAJYNf">Yannic: Playing Atari with Deep Reinforcement Learning</a></li>
+  <li><a href="https://www.youtube.com/watch?v=kOy49NqZeqI">Yannic: V-trace</a></li>
+  <li><a href="https://www.youtube.com/watch?v=BTLCdge7uSQ">Yannic: AlphaStar</a></li>
+</ul>
+
+<h3 id="paper-4">Paper</h3>
+
+<p>Read in order, however a more definitive list is <a href="https://spinningup.openai.com/en/latest/spinningup/keypapers.html#key-papers-in-deep-rl">here</a> and <a href="https://spinningup.openai.com/en/latest/spinningup/rl_intro2.html#a-taxonomy-of-rl-algorithms">here</a>.</p>
+<ul>
+  <li><a href="https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf">Playing Atari with Deep Reinforcement Learning</a></li>
+  <li><a href="https://arxiv.org/pdf/1509.02971.pdf">Continuous Control With Deep Reinforcement Learning</a></li>
+  <li><a href="https://arxiv.org/pdf/1509.06461.pdf">Deep Reinforcement Learning with Double Q-learning</a></li>
+  <li><a href="https://arxiv.org/pdf/1511.06581.pdf">Dueling Network Architectures for Deep Reinforcement Learning</a></li>
+  <li><a href="https://arxiv.org/pdf/1710.02298.pdf">Rainbow: Combining Improvements in Deep Reinforcement Learning</a></li>
+  <li><a href="https://paperswithcode.com/method/v-trace">V-Trace</a></li>
+  <li><a href="https://paperswithcode.com/method/alphastar">AlphaStar</a></li>
+</ul>
+
+<h2 id="back-propagation"><strong>Back Propagation</strong>:</h2>
+
+<h3 id="tutorialexplanation-5">Tutorial/Explanation</h3>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=Ilg3gGewQ5U&amp;t">3Blue1Brown</a></li>
+  <li><a href="https://www.youtube.com/watch?v=UJwK6jAStmg">Neural Networks Demystified [Part 2: Forward Propagation]</a></li>
+  <li><a href="https://www.youtube.com/watch?v=GlcnxUlrtek">Neural Networks Demystified [Part 4: Backpropagation]</a></li>
+  <li><a href="https://iamtrask.github.io/2015/07/12/basic-python-network/">A Neural Network in 11 lines of Python (Part 1)</a></li>
+</ul>
+
+<h3 id="paper-5">Paper</h3>
+
+<ul>
+  <li><a href="https://www.iro.umontreal.ca/~vincentp/ift3395/lectures/backprop_old.pdf">Learning Representation By Back-Propagating Errors</a></li>
+</ul>
+
+<h2 id="transformers"><strong>Transformers</strong>:</h2>
+
+<h3 id="tutorialexplanation-6">Tutorial/Explanation</h3>
+
+<ul>
+  <li><a href="https://paperswithcode.com/paper/attention-is-all-you-need">Papers With Code: Attention Is All You Need</a></li>
+  <li><a href="https://www.youtube.com/watch?v=iDulhoQ2pro">Yannic: Attention Is All You Need</a></li>
+</ul>
+
+<h3 id="paper-6">Paper</h3>
+
+<ul>
+  <li><a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a></li>
+</ul>
+:ET
