@@ -8,7 +8,7 @@ hasmath: "false"
 ---
 # Computer Science:
 
-## Research
+## **Research**
 
 ### Meta:
 
@@ -36,7 +36,7 @@ hasmath: "false"
 
 
 
-## Machine Learning
+## **Machine Learning**
 
 ### Blogs:
 
@@ -152,7 +152,7 @@ hasmath: "false"
 
 
 
-## Linux
+## **Linux**
 
 ### i3:
 
@@ -215,7 +215,7 @@ hasmath: "false"
 
 
 
-## Computer Graphics
+## **Computer Graphics**
 
 * [OpenGL Tutorial: Matrices](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-3-matrices/)
 * [Advice article on getting into computer graphics](https://erkaman.github.io/posts/beginner_computer_graphics.html)
@@ -223,7 +223,7 @@ hasmath: "false"
 
 
 
-## Online Classes (Computer Science)
+## **Online Classes (Computer Science)**
 
 ### Top Notch Resources:
 
@@ -267,7 +267,7 @@ hasmath: "false"
 
 
 
-## Interviewing
+## **Interviewing**
 
 ### Cracking The Coding Interview:
 
@@ -298,7 +298,7 @@ hasmath: "false"
 
 
 
-## Textbooks
+## **Textbooks**
 
 ### Operating Systems:
 
@@ -338,14 +338,12 @@ hasmath: "false"
 
 
 
-## Git/Github
+## **Git/Github**
 
 * [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
 * [Learning Git Branching](https://learngitbranching.js.org/)
 
-
-
-## Manim
+## **Manim**
 
 * [manim docs](https://www.manim.community/)
 * [Algorithm Information Computing](https://infograph.tistory.com/)
@@ -354,10 +352,9 @@ hasmath: "false"
 * [Example Gallery of different animations](https://docs.manim.community/en/v0.1.1/examples.html#animations)
 
 
-
 # Mathematics
 
-## Online Classes (Mathematics)
+## **Online Classes (Mathematics)**
 
 ### Calculus
 * [Single Variable Calculus](https://ocw.mit.edu/courses/mathematics/18-01-single-variable-calculus-fall-2006/)
@@ -382,27 +379,25 @@ hasmath: "false"
 * [Mathematics for Machine Learning: Linear Algebra:](https://www.youtube.com/playlist?list=PLiiljHvN6z1_o1ztXTKWPrShrMrBLo5P3)
 
 
-## Non-Online Class Resources
-## Calculus
+## **Calculus**
 * [Stewart - Calculus](https://www.stewartcalculus.com/)
 * [3Blue1Brown's Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
 
 
-## Linear Algebra 
+## **Linear Algebra**
 * [Strang - Introduction to Linear Algebra](https://math.mit.edu/~gs/linearalgebra/)
 * [3Blue1Brown: Essence Of Linear Algebra](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 * [Linear Algebra Review and Reference](http://cs229.stanford.edu/section/cs229-linalg.pdf)
 
 
-## Probability
+## **Probability**
 * [Introduction to Probability and Statistics](https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/)
 * [Review of Probability Theory: Notes](http://cs229.stanford.edu/section/cs229-prob.pdf)
 
   
-## Statistics
+## **Statistics**
 * [Introduction to Probability and Statistics](https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/)
 
 
-## Real Analysis
+## **Real Analysis**
 * [Fantastic Collection Of Real Analysis Resources](https://longformmath.com/videos)
-
