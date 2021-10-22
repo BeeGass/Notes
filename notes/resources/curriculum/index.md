@@ -1,5 +1,12 @@
-# Deep Learning Curriculums 
 
+---
+layout: post
+title: Deep Learning Curriculum
+author: Bryan
+tags: notes
+custom_css: tufte
+hasmath: "false"
+---
 ## Textbooks
 
 ### Textbooks To Use (Ideally in order):
