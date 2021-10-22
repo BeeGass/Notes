@@ -260,7 +260,7 @@ hasmath: "false"
 * [fastai, part 2](https://course19.fast.ai/part2) 
 * [Non-Euclidean Methods in Machine Learning](https://graphics.stanford.edu/courses/cs468-20-fall/index.html) 
 * [NYU's Deep Learning Course](https://atcold.github.io/pytorch-Deep-Learning/)
-* [Introduction To Deep Learning](https://sebastianraschka.com/blog/2021/dl-course.html)
+* [Introduction To Deep Learning, by Sebastian Raschka](https://sebastianraschka.com/blog/2021/dl-course.html)
 * [WPI's Deep Learning Course](https://video.wpi.edu/hapi/v1/ui/permalinks/Mb5g3C7K)
 * [MIT's Intro To Deep Learning](http://introtodeeplearning.com/)
 
@@ -326,9 +326,11 @@ hasmath: "false"
 * [Gaussian Processes for Machine Learning](http://www.gaussianprocess.org/gpml/chapters/RW.pdf)
 * [The Deep Learning Book](https://www.deeplearningbook.org/)
 * [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
+* [Neural Networks and Deep Learning Textbook](http://neuralnetworksanddeeplearning.com/index.html)
 * [Learning Machine Learning Book](https://rentruewang.github.io/learning-machine/intro.html)
 * [Neural Network From Scratch](https://nnfs.io/)
 * [Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book.html)
+* [Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges](https://arxiv.org/abs/2104.13478)
 * [Natural Language Processing with Python](https://www.nltk.org/book/)
 
 **Books I used In My Optimization For Deep Learning Course**
@@ -386,6 +388,7 @@ hasmath: "false"
 ## **Calculus**
 * [Stewart - Calculus](https://www.stewartcalculus.com/)
 * [3Blue1Brown's Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
+* [Introduction to Tensor Calculus](https://grinfeld.org/books/An-Introduction-To-Tensor-Calculus/)
 
 
 ## **Linear Algebra**
@@ -405,4 +408,7 @@ hasmath: "false"
 
 ## **Real Analysis**
 * [Fantastic Collection Of Real Analysis Resources](https://longformmath.com/videos)
+<<<<<<< HEAD
 
+=======
+>>>>>>> d245487e98458379c0d24dfa974621ae94db7286

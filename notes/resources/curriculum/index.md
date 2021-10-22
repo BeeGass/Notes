@@ -7,13 +7,14 @@
 * [Dive Into Deep Learning Textbook](https://d2l.ai/)
 * [Mathematics for Machine Learning](https://mml-book.github.io/)
 * [The Deep Learning Book](https://www.deeplearningbook.org/)
-* [Pattern Recognition And Machine Learning](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop - Pattern Recognition And Machine Learning - Springer  2006.pdf)
+* [Pattern Recognition And Machine Learning](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf)
 * ["Probabilistic Machine Learning" - a book series by Kevin Murphy](https://probml.github.io/pml-book/)
 * [Model-Based Machine Learning](https://www.mbmlbook.com/toc.html)
 
 ### Supplementary Textbooks:
 
 * [Neural Networks and Deep Learning Textbook](http://neuralnetworksanddeeplearning.com/index.html)
+* [Learning Machine Learning Book](https://rentruewang.github.io/learning-machine/intro.html)
 * (if there is time) [Neural Network From Scratch](https://nnfs.io/)
 
 ### Books For Optimization:
