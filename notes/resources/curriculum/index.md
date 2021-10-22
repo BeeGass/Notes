@@ -80,6 +80,7 @@ As you go through just get enough knowledge to finish the projects. There is a s
 ### Second Pass: 
 
 1. [WPI's Deep Learning Course](https://video.wpi.edu/hapi/v1/ui/permalinks/Mb5g3C7K) *As you go understand the material thoroughly and do the homeworks to completion*
+   
    **Supplement this course with the following:**
 
    1. [LeCun's NYU Deep Learning Course](https://atcold.github.io/pytorch-Deep-Learning/ )
@@ -87,12 +88,12 @@ As you go through just get enough knowledge to finish the projects. There is a s
 
    **Additionally supplement material by reading chapters from the following**
 
-   1.  [Dive Into Deep Learning Textbook](https://d2l.ai/)
+   1. [Dive Into Deep Learning Textbook](https://d2l.ai/)
    2. [The Deep Learning Book](https://www.deeplearningbook.org/)
-   3. [Pattern Recognition And Machine Learning](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop - Pattern Recognition And Machine Learning - Springer  2006.pdf)
+   3. [Pattern Recognition And Machine Learning](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf)
 
 ### Third Pass:
 
 1. Go in depth by reading FULL chapters and doing problems from the following. Additionally, time should be evenly spent also implementing papers of your choice refer to paper wish list for this
-   1. [Pattern Recognition And Machine Learning](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop - Pattern Recognition And Machine Learning - Springer  2006.pdf)
+   1. [Pattern Recognition And Machine Learning](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf)
    2. ["Probabilistic Machine Learning" - a book series by Kevin Murphy](https://probml.github.io/pml-book/)
