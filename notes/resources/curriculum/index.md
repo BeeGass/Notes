@@ -1,7 +1,7 @@
 
 ---
 layout: post
-title: Deep Learning Curriculum
+title: Deep-Learning-Curriculum
 author: Bryan
 tags: notes
 custom_css: tufte
