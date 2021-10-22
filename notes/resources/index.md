@@ -256,7 +256,7 @@ hasmath: "false"
 * [fastai, part 2](https://course19.fast.ai/part2) 
 * [Non-Euclidean Methods in Machine Learning](https://graphics.stanford.edu/courses/cs468-20-fall/index.html) 
 * [NYU's Deep Learning Course](https://atcold.github.io/pytorch-Deep-Learning/)
-* [Introduction To Deep Learning](https://sebastianraschka.com/blog/2021/dl-course.html)
+* [Introduction To Deep Learning, by Sebastian Raschka](https://sebastianraschka.com/blog/2021/dl-course.html)
 * [WPI's Deep Learning Course](https://video.wpi.edu/hapi/v1/ui/permalinks/Mb5g3C7K)
 * [MIT's Intro To Deep Learning](http://introtodeeplearning.com/)
 
