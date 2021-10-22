@@ -322,6 +322,7 @@ hasmath: "false"
 * [Gaussian Processes for Machine Learning](http://www.gaussianprocess.org/gpml/chapters/RW.pdf)
 * [The Deep Learning Book](https://www.deeplearningbook.org/)
 * [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
+* [Neural Networks and Deep Learning Textbook](http://neuralnetworksanddeeplearning.com/index.html)
 * [Learning Machine Learning Book](https://rentruewang.github.io/learning-machine/intro.html)
 * [Neural Network From Scratch](https://nnfs.io/)
 * [Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book.html)
@@ -382,6 +383,7 @@ hasmath: "false"
 ## **Calculus**
 * [Stewart - Calculus](https://www.stewartcalculus.com/)
 * [3Blue1Brown's Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
+* [Introduction to Tensor Calculus](https://grinfeld.org/books/An-Introduction-To-Tensor-Calculus/)
 
 
 ## **Linear Algebra**
