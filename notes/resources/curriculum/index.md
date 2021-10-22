@@ -67,9 +67,9 @@ As you go through just get enough knowledge to finish the projects. There is a s
 
 ### First Pass: 
 
-1. https://course.fast.ai/
+1. [fast.ai, part 1](https://course.fast.ai/)
 
-2. https://course19.fast.ai/part2  
+2. [fast.ai, part 2](https://course19.fast.ai/part2)  
 
    **Additionally supplement material by reading chapters from the following**
 
