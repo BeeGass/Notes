@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Deep-Learning-Curriculum
@@ -7,7 +6,6 @@ tags: notes
 custom_css: tufte
 hasmath: "false"
 ---
-
 ## Textbooks
 
 ### Textbooks To Use (Ideally in order):
