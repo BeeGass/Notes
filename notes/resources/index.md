@@ -150,6 +150,10 @@ hasmath: "false"
 
 [Click here for: t-SNE](t-sne/)
 
+### Learning Deep Learning:
+
+[Click here for: A Deep Learning Curriculum](curriculum/)
+
 
 
 ## **Linux**
@@ -401,3 +405,4 @@ hasmath: "false"
 
 ## **Real Analysis**
 * [Fantastic Collection Of Real Analysis Resources](https://longformmath.com/videos)
+
